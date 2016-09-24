@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.XamJam.Screen.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.XamJam.Screen.Abstractions.Screen">
+            <summary>
+                Interface for XamJam.Screen
+            </summary>
+        </member>
+        <member name="P:Plugin.XamJam.Screen.Abstractions.Screen.Size">
+            <summary>
+                Returns this platforms total screen size. The size available to any app at any point in time will not exceed this
+                size.
+            </summary>
+        </member>
+        <member name="T:Plugin.XamJam.Screen.Abstractions.ScreenSize">
+            <summary>
+                Immutable screen size expressed as a width and height with double precision.
+            </summary>
+        </member>
+        <member name="P:Plugin.XamJam.Screen.Abstractions.ScreenSize.IsMaximum">
+            <summary>
+            Returns true if this is the maximum screen size your app will encounter on this device. This may be false for UWP apps 
+            where the screen sizes are not known and there may even be multiple monitors.
+            </summary>
+        </member>
+        <member name="P:Plugin.XamJam.Screen.Abstractions.ScreenSize.Width">
+            <summary>
+                Screen width
+            </summary>
+        </member>
+        <member name="P:Plugin.XamJam.Screen.Abstractions.ScreenSize.Height">
+            <summary>
+                Screen height
+            </summary>
+        </member>
+        <member name="M:Plugin.XamJam.Screen.Abstractions.ScreenSize.#ctor(System.Boolean,System.Double,System.Double)">
+            <summary>
+                Creates a new ScreenSize struct
+            </summary>
+            <param name="isMaximum">true if this is a guaranteed maximum screen size, false for cases where the maximum screen size is not known (e.g. UWP with multiple monitors)</param>
+            <param name="width">the screen's width</param>
+            <param name="height">the screen's height</param>
+        </member>
+    </members>
+</doc>

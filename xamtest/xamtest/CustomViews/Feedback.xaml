@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="xamtest.CustomViews.Feedback" BackgroundColor="Maroon" HeightRequest="50">
+  <Label Text="Click to send feedback to HockeyApp" TextColor="Aqua" FontSize="10" HorizontalTextAlignment="Center"/>
+  <Button Image="hockeyapp.png" HorizontalOptions="FillAndExpand" x:Name="feed"/>
+</StackLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.XamJam.Screen</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.XamJam.Screen.CrossScreen">
+            <summary>
+                Cross platform CrossScreen implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.XamJam.Screen.CrossScreen.Current">
+            <summary>
+                Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>
