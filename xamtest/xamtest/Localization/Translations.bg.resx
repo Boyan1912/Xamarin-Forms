@@ -123,4 +123,7 @@
   <data name="FlyOutAnim" xml:space="preserve">
     <value>Хайде да танцуваме :) !</value>
   </data>
+  <data name="LangChoice" xml:space="preserve">
+    <value>Избери език</value>
+  </data>
 </root>

@@ -35,14 +35,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomViews\AnimatedButton.cs" />
     <Compile Include="CustomViews\Feedback.xaml.cs">
       <DependentUpon>Feedback.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomViews\LanguagePicker.xaml.cs">
+      <DependentUpon>LanguagePicker.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Data\IHockeyAppService.cs" />
     <Compile Include="Data\ILocalize.cs" />
+    <Compile Include="Data\LanguageController.cs" />
     <Compile Include="Data\PlatformCulture.cs" />
+    <Compile Include="Data\TranslateByKeyExtension.cs" />
     <Compile Include="Data\TranslateExtension.cs" />
+    <Compile Include="Extensions\Animations.cs" />
     <Compile Include="Localization\Translations.bg.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -58,10 +67,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Translations.resx</DependentUpon>
     </Compile>
-    <Compile Include="Models\AnimationSettingsVM.cs" />
+    <Compile Include="Models\AnimSetViewModel.cs" />
+    <Compile Include="Pages\AnimSettings.xaml.cs">
+      <DependentUpon>AnimSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FormattedTextsTestPage.xaml.cs">
+      <DependentUpon>FormattedTextsTestPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RandomAnimations.xaml.cs">
       <DependentUpon>RandomAnimations.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\RedbitPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomControls\" />
+    <Folder Include="ExtendedPages\" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization\Translations.resx">
@@ -118,6 +136,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CustomViews\Feedback.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\AnimSettings.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\FormattedTextsTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomViews\LanguagePicker.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

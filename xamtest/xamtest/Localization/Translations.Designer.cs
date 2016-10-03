@@ -78,5 +78,14 @@ namespace xamtest.Localization {
                 return ResourceManager.GetString("FlyOutAnim", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose a language.
+        /// </summary>
+        public static string LangChoice {
+            get {
+                return ResourceManager.GetString("LangChoice", resourceCulture);
+            }
+        }
     }
 }

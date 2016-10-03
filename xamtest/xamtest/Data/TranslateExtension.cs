@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Globalization;
 using System.Reflection;
 using System.Resources;
@@ -9,14 +10,16 @@ namespace xamtest.Data
 {
     // You exclude the 'Extension' suffix when using in Xaml markup
     [ContentProperty("Text")]
-    public class TranslateExtension : IMarkupExtension
+    public class TranslateExtension : IMarkupExtension, INotifyPropertyChanged
     {
         readonly CultureInfo ci;
         const string ResourceId = "xamtest.Localization.Translations";
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public TranslateExtension()
         {
-            if (Device.OS == TargetPlatform.iOS || Device.OS == TargetPlatform.Android)
+            if (Device.OS == TargetPlatform.iOS || Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.WinPhone)
             {
                 ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
             }
@@ -44,6 +47,8 @@ namespace xamtest.Data
                 translation = Text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
 #endif
             }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Text"));
+
             return translation;
         }
     }

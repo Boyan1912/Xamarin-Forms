@@ -37,13 +37,13 @@ namespace xamtest.Droid
         
         public void EnableCrashReporting()
         {
-            CrashManager.Register(this.ApplicationContext, "$Your_App_Id");
+            CrashManager.Register(this.ApplicationContext, "4f6a452f03e641e289ac097c81a3e3c4");
         }
 
         public void CheckForUpdates(Activity activity)
         {
             // Remove this for store builds!
-            UpdateManager.Register(activity, "$Your_App_Id");
+            UpdateManager.Register(activity, "4f6a452f03e641e289ac097c81a3e3c4");
         }
 
         public void UnregisterManagers()

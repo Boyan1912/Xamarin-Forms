@@ -1,0 +1,1 @@
+xmlns:appl="clr-namespace:xamtest.App;assembly=xamtest"

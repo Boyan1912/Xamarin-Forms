@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamtest.Pages.AnimSettings"
+             xmlns:local="clr-namespace:xamtest.Models;assembly=xamtest"
+             >
+    <!--xmlns:i18n="clr-namespace:xamtest.Localization;assembly=xamtest"-->
+    <ContentPage.BindingContext>
+        <local:AnimSetViewModel />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout Padding="15" HeightRequest="100" BackgroundColor="Gray">
+            <StackLayout HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Maroon">
+                <BoxView Color="{Binding MajorColor}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Padding="15" Orientation="Vertical" VerticalOptions="StartAndExpand">
+                <Label Text="{Binding RedValue, StringFormat='Red Value = {0:F2}'}" HorizontalOptions="Center" TextColor="Red" />
+                <Slider x:Name="redSlider" Value="{Binding RedValue, Mode=TwoWay}" Scale="3" ValueChanged="Slider_ValueChanged" />
+                <Label Text="{Binding GreenValue, StringFormat='Green Value = {0:F2}'}" HorizontalOptions="Center" TextColor="Green" />
+                <Slider x:Name="greenSlider" Value="{Binding GreenValue, Mode=TwoWay}" Scale="3" />
+                <Label Text="{Binding BlueValue, StringFormat='Blue Value = {0:F2}'}" HorizontalOptions="Center" TextColor="Blue" />
+                <Slider x:Name="blueSlider" Value="{Binding BlueValue, Mode=TwoWay}" Scale="3" />
+                <Label Text="{Binding OpacityLevel, StringFormat='Opacity Level = {0:F2}'}" HorizontalOptions="Center" />
+                <Slider x:Name="opacitySlider" Value="{Binding OpacityLevel, Mode=TwoWay}" Scale="3" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -9,7 +9,8 @@ using Android.Widget;
 using Android.OS;
 
 using Xamarin.Forms;
-
+using xamtest.Localization;
+using System.Reflection;
 
 namespace xamtest.Droid
 {
@@ -29,14 +30,15 @@ namespace xamtest.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             var hockeyService = new HockeyAppService(ApplicationContext);
-            //hockeyService.Register(this, "$Your_App_Id");
-            //hockeyService.CheckForUpdates(this);
-            //HockeyApp.Android.LoginManager.Register(this, "$APP_SECRET", HockeyApp.Android.LoginManager.LoginModeEmailPassword);
-            //HockeyApp.Android.LoginManager.VerifyLogin(this, Intent);
-            //hockeyService.EnableCrashReporting();
-            
+            hockeyService.Register(this, "4f6a452f03e641e289ac097c81a3e3c4");
+            hockeyService.CheckForUpdates(this);
+            //HockeyApp.Android.LoginManager.Register(this, "eb7057abe50d700a121edbd521b31363", HockeyApp.Android.LoginManager.LoginModeEmailPassword);
+            HockeyApp.Android.LoginManager.VerifyLogin(this, Intent);
+            hockeyService.EnableCrashReporting();
+
 
             LoadApplication(new App(hockeyService));
+
         }
 
 

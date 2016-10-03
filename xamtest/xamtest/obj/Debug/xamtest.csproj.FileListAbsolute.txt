@@ -23,10 +23,16 @@ E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Localization.Translations
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.csproj.GenerateResource.Cache
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.RandomAnimations.xaml.g.cs
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.Feedback.xaml.g.cs
+E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.AnimSettings.xaml.g.cs
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\bg\xamtest.resources.dll
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\de\xamtest.resources.dll
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.pdb
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.csprojResolveAssemblyReference.cache
+E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.FormattedTextsTestPage.xaml.g.cs
+E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.App.xaml.g.cs
+E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.LanguagePicker.xaml.g.cs
+E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll.mdb
+E:\workspace\xamtest\xamtest\xamtest\bin\Debug\xamtest.dll.mdb
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll.mdb
 E:\workspace\xamtest\xamtest\xamtest\bin\Debug\xamtest.dll.mdb

@@ -118,9 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FlyInAnim" xml:space="preserve">
-    <value>Zu Hause Geen!</value>
+    <value>Zu Hause !</value>
   </data>
   <data name="FlyOutAnim" xml:space="preserve">
-    <value>Tanzen Geen :) !</value>
+    <value>Tanzt mit :) !</value>
+  </data>
+  <data name="LangChoice" xml:space="preserve">
+    <value>Wiegen Sprache</value>
   </data>
 </root>

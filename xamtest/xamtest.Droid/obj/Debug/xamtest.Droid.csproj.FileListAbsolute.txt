@@ -50,6 +50,9 @@ E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\davi.jpg
 E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\hockeyapp.png
 E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\R.cs.flag
 E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\uploadflags.txt
+E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\flag_en.png
+E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\flag_bg.png
+E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\flag_de.png
 E:\workspace\xamtest\xamtest\xamtest.Droid\bin\Debug\xamtest.Droid.dll.mdb
 E:\workspace\xamtest\xamtest\xamtest.Droid\bin\Debug\xamtest.dll.mdb
 E:\workspace\xamtest\xamtest\xamtest.Droid\bin\Debug\Java.Interop.dll.mdb
