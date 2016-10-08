@@ -16,7 +16,6 @@
                 <Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
             </Style>
 
-            <local:LanguagePicker x:Key="LangPickerLayout" />
 
         </ResourceDictionary>
     </Application.Resources>

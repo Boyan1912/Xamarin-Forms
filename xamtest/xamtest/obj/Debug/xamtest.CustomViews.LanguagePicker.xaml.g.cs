@@ -17,20 +17,8 @@ namespace xamtest.CustomViews {
     public partial class LanguagePicker : global::Xamarin.Forms.ContentView {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.StackLayout LangWrapper;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Picker LangPicker;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Image flag;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(LanguagePicker));
-            LangWrapper = this.FindByName<global::Xamarin.Forms.StackLayout>("LangWrapper");
-            LangPicker = this.FindByName<global::Xamarin.Forms.Picker>("LangPicker");
-            flag = this.FindByName<global::Xamarin.Forms.Image>("flag");
         }
     }
 }

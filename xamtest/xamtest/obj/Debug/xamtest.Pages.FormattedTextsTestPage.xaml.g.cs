@@ -17,8 +17,16 @@ namespace xamtest.Pages {
     public partial class FormattedTextsTestPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout LangWrapper;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Picker LangPicker;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(FormattedTextsTestPage));
+            LangWrapper = this.FindByName<global::Xamarin.Forms.StackLayout>("LangWrapper");
+            LangPicker = this.FindByName<global::Xamarin.Forms.Picker>("LangPicker");
         }
     }
 }

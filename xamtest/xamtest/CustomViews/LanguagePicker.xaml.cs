@@ -14,6 +14,7 @@ namespace xamtest.CustomViews
         {
             InitializeComponent();
             BindingContext = App.LanguageController;
+            
         }
     }
 }

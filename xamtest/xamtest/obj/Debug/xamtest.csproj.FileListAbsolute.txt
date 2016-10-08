@@ -34,5 +34,3 @@ E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.App.xaml.g.cs
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.LanguagePicker.xaml.g.cs
 E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll.mdb
 E:\workspace\xamtest\xamtest\xamtest\bin\Debug\xamtest.dll.mdb
-E:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll.mdb
-E:\workspace\xamtest\xamtest\xamtest\bin\Debug\xamtest.dll.mdb

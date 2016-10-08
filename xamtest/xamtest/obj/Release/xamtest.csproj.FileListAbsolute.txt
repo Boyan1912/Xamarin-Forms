@@ -32,3 +32,5 @@ E:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.csprojResolveAssemblyRe
 E:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.Pages.FormattedTextsTestPage.xaml.g.cs
 E:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.dll.mdb
 E:\workspace\xamtest\xamtest\xamtest\bin\Release\xamtest.dll.mdb
+E:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.App.xaml.g.cs
+E:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.CustomViews.LanguagePicker.xaml.g.cs

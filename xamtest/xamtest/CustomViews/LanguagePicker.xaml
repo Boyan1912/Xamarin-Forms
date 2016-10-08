@@ -5,21 +5,26 @@
     x:Class="xamtest.CustomViews.LanguagePicker"
     xmlns:i18n="clr-namespace:xamtest.Data;assembly=xamtest"
     xmlns:app="clr=namespace:xamtest.App;assembly=xamtest">
+    <!--<ContentView.Resources>
+        <ResourceDictionary>
+            <StackLayout Orientation="Horizontal" Padding="15, 0" HeightRequest="40" x:Name="LangWrapper" x:Key="LanguagePickerLayout" BackgroundColor="Aqua">
+                <Picker x:Name="LangPicker" SelectedIndex="{Binding SelectedCultureId, Mode=TwoWay}" Title="{Binding SelectedCultureId, {i18n:Translate LangChoice}, Mode=TwoWay}"  Scale=".6"  HorizontalOptions="Start" >
+                    <Picker.Items>
+                        <x:String>English</x:String>
+                        <x:String>Deutsch</x:String>
+                        <x:String>Български</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Image HorizontalOptions="EndAndExpand" VerticalOptions="Center" HeightRequest="25" x:Name="flag" Source="{Binding SelectedCulture.ImageSrc}">
+                </Image>
+            </StackLayout>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
   <ContentView.Content>
 
-        <StackLayout Orientation="Horizontal" Padding="15, 0" HeightRequest="40" x:Name="LangWrapper" x:Key="LanguagePickerLayout" BackgroundColor="Aqua">
-            <Picker x:Name="LangPicker" SelectedIndex="{Binding SelectedCultureId, Mode=TwoWay}" Title="{Binding SelectedCultureId, {i18n:Translate LangChoice}, Mode=TwoWay}"  Scale=".6"  HorizontalOptions="Start" >
-                <Picker.Items>
-                    <x:String>English</x:String>
-                    <x:String>Deutsch</x:String>
-                    <x:String>Български</x:String>
-                </Picker.Items>
-            </Picker>
-            <Image HorizontalOptions="EndAndExpand" VerticalOptions="Center" HeightRequest="25" x:Name="flag" Source="{Binding SelectedCulture.ImageSrc}">
-            </Image>
-        </StackLayout>
 
+        <LanguagePickerLayout/>
 
-
-    </ContentView.Content>
+    </ContentView.Content>-->
 </ContentView>

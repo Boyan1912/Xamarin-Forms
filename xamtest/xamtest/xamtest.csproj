@@ -38,6 +38,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Behaviors\TranslateTextBehavior.cs" />
+    <Compile Include="CustomControls\TranslatableLabel.cs" />
     <Compile Include="CustomViews\AnimatedButton.cs" />
     <Compile Include="CustomViews\Feedback.xaml.cs">
       <DependentUpon>Feedback.xaml</DependentUpon>
@@ -120,7 +122,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CustomControls\" />
     <Folder Include="ExtendedPages\" />
     <Folder Include="Infrastructure\" />
   </ItemGroup>
