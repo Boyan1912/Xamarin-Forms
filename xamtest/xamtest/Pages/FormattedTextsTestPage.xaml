@@ -3,29 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="xamtest.Pages.FormattedTextsTestPage"
              xmlns:behaviors="clr-namespace:xamtest.Behaviors;assembly=xamtest"
-             xmlns:custom="clr-namespace:xamtest.CustomControls;assembly=xamtest">
-    <ContentPage.Resources>
-        <ResourceDictionary>
+             xmlns:i18n="clr-namespace:xamtest.Data;assembly=xamtest">
 
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" Padding="15, 0" HeightRequest="40" x:Name="LangWrapper" x:Key="LanguagePickerLayout" BackgroundColor="Aqua">
-                <Picker x:Name="LangPicker" Scale=".6"  HorizontalOptions="Start" >
-                    <Picker.Items>
-                        <x:String>English</x:String>
-                        <x:String>Deutsch</x:String>
-                        <x:String>Български</x:String>
-                    </Picker.Items>
-                </Picker>
-                <!--<Image HorizontalOptions="EndAndExpand" VerticalOptions="Center" HeightRequest="25" x:Name="flag" Source="{Binding SelectedCulture.ImageSrc}">
+  <ContentPage.Content>
+    <StackLayout Orientation="Vertical">
+      <StackLayout Orientation="Horizontal" Padding="15" HeightRequest="40" x:Name="LangWrapper" BackgroundColor="Aqua">
+        <Picker x:Name="LangPicker" HorizontalOptions="Start" SelectedIndex="{Binding SelectedCultureId, Mode=TwoWay}"  Title="Select language">
+          <Picker.Items>
+            <x:String>English</x:String>
+            <x:String>Deutsch</x:String>
+            <x:String>Български</x:String>
+          </Picker.Items>
+        </Picker>
+      </StackLayout>
+      <!--<Image HorizontalOptions="EndAndExpand" VerticalOptions="Center" HeightRequest="25" x:Name="flag" Source="{Binding SelectedCulture.ImageSrc}">
                 </Image>-->
-            </StackLayout>
+      <StackLayout>
+        <Label FontSize="30" TextColor="Maroon" Text="lalalala">
+          <Label.Behaviors>
+            <behaviors:TranslateTextBehavior LanguagePicker="{x:Reference LangPicker}" TranslateKey="FlyInAnim"/>
+          </Label.Behaviors>
+        </Label>
+      </StackLayout>
 
-            <custom:TranslatableLabel FontSize="30" TranslateKey="FlyInAnim" >
-                <behaviors:TranslateTextBehavior LanguagePicker="{x:Reference LangPicker}"/>
-            </custom:TranslatableLabel>
-        </StackLayout>
-    </ContentPage.Content>
+    </StackLayout>
+  </ContentPage.Content>
 </ContentPage>

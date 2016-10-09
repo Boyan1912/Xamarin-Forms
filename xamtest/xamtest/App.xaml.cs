@@ -17,14 +17,13 @@ namespace xamtest
     public partial class App : Application
     {
 
-        public App(Data.IHockeyAppService hockey)
+        public App()
         {
-            HockeyAppService = hockey;
             LanguageController = new LanguageController();
 
-            var rootPage = new NavigationPage(new CarouselPage
+            var rootPage = new NavigationPage(new TabbedPage
             {
-                Title = "Carousel Page",
+                Title = "Tabbed Page",
                 Children =
                 {
                     //new RedbitPage(),
@@ -37,6 +36,11 @@ namespace xamtest
             App.Navigation = rootPage.Navigation;
 
             MainPage = rootPage;
+        }
+
+        public App(Data.IHockeyAppService hockey) : this()
+        {
+            HockeyAppService = hockey;
         }
 
         public static LanguageController LanguageController { get; set; }

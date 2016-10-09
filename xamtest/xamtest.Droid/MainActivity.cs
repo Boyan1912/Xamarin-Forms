@@ -29,30 +29,30 @@ namespace xamtest.Droid
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
-            var hockeyService = new HockeyAppService(ApplicationContext);
-            hockeyService.Register(this, "4f6a452f03e641e289ac097c81a3e3c4");
-            hockeyService.CheckForUpdates(this);
+            //var hockeyService = new HockeyAppService(ApplicationContext);
+            //hockeyService.Register(this, "4f6a452f03e641e289ac097c81a3e3c4");
+            //hockeyService.CheckForUpdates(this);
             //HockeyApp.Android.LoginManager.Register(this, "eb7057abe50d700a121edbd521b31363", HockeyApp.Android.LoginManager.LoginModeEmailPassword);
-            HockeyApp.Android.LoginManager.VerifyLogin(this, Intent);
-            hockeyService.EnableCrashReporting();
+            //HockeyApp.Android.LoginManager.VerifyLogin(this, Intent);
+            //hockeyService.EnableCrashReporting();
 
 
-            LoadApplication(new App(hockeyService));
+            LoadApplication(new App());
 
         }
 
 
-        protected override void OnPause()
-        {
-            base.OnPause();
-            (App.HockeyAppService as HockeyAppService).UnregisterManagers();
-        }
+        //protected override void OnPause()
+        //{
+        //    base.OnPause();
+        //    (App.HockeyAppService as HockeyAppService).UnregisterManagers();
+        //}
 
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
-            (App.HockeyAppService as HockeyAppService).UnregisterManagers();
-        }
+        //protected override void OnDestroy()
+        //{
+        //    base.OnDestroy();
+        //    (App.HockeyAppService as HockeyAppService).UnregisterManagers();
+        //}
     }
 }
 

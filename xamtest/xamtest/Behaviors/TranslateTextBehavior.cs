@@ -12,49 +12,38 @@ using xamtest.Localization;
 
 namespace xamtest.Behaviors
 {
-    public class TranslateTextBehavior : Behavior<TranslatableLabel>
+    public class TranslateTextBehavior : Behavior<Label>
     {
         const string ResourceId = "xamtest.Localization.Translations";
-
-        static readonly BindablePropertyKey TranslatedTextKey = BindableProperty.CreateReadOnly("TranslatedText", typeof(string), typeof(TranslateTextBehavior), null);
-
-        public static readonly BindableProperty TranslatedTextProperty = TranslatedTextKey.BindableProperty;
+        Label bound;
 
         public TranslateTextBehavior()
         {
             Resmgr = new ResourceManager(ResourceId, typeof(TranslateTextBehavior).GetTypeInfo().Assembly);
         }
-
-        public string TranslatedText
-        {
-            get { return (string)base.GetValue(TranslatedTextProperty);  }
-            private set { base.SetValue(TranslatedTextKey, value); }
-        }
-
+        
         public Picker LanguagePicker { get; set; }
 
         public ResourceManager Resmgr { get; set; }
 
-        protected override void OnAttachedTo(TranslatableLabel bindable)
+        public string TranslateKey { get; set; }
+
+        protected override void OnAttachedTo(Label bindable)
         {
-            base.OnAttachedTo(bindable);
-            if (LanguagePicker.SelectedIndex > -1)
-            {
-                LanguagePicker.SelectedIndexChanged += LanguagePicker_SelectedIndexChanged;
-                TranslatedText = Resmgr.GetString(bindable.TranslateKey, Translations.Culture);
-                bindable.Text = TranslatedText;
-            }
+            bound = bindable;
+            LanguagePicker.SelectedIndexChanged += LanguagePicker_SelectedIndexChanged;
         }
 
         private void LanguagePicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             App.LanguageController.SetCurrentCulture(((Picker)sender).SelectedIndex);
+            string translatedText = Resmgr.GetString(TranslateKey, Translations.Culture);
+            bound.SetValue(Label.TextProperty, translatedText);
         }
 
-        protected override void OnDetachingFrom(TranslatableLabel bindable)
+        protected override void OnDetachingFrom(Label bindable)
         {
-            base.OnDetachingFrom(bindable);
-            LanguagePicker.SelectedIndexChanged -= LanguagePicker_SelectedIndexChanged;
+            //LanguagePicker.SelectedIndexChanged -= LanguagePicker_SelectedIndexChanged;
         }
     }
 }

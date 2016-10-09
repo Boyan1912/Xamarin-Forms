@@ -13,6 +13,8 @@ namespace xamtest.Pages
         public FormattedTextsTestPage()
         {
             InitializeComponent();
+
+            LangWrapper.BindingContext = BindingContext = App.LanguageController; 
         }
     }
 }
