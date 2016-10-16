@@ -45,9 +45,8 @@ namespace xamtest.Data
                 if (selectedCultureId != value)
                 {
                     selectedCultureId = value;
-                    OnPropertyChanged("SelectedCultureId");
-                    OnPropertyChanged("SelectedCulture");
                     SetCurrentCulture(SelectedCulture.Culture);
+                    MessagingCenter.Send<LanguageController>(this, "CultureChanged");
                 }
             }
         }

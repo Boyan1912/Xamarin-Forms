@@ -68,7 +68,11 @@ D:\workspace\xamtest\xamtest\xamtest\obj\Debug\bg\xamtest.resources.dll
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\de\xamtest.resources.dll
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.pdb
-D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll.mdb
-D:\workspace\xamtest\xamtest\xamtest\bin\Debug\xamtest.dll.mdb
+D:\workspace\xamtest\xamtest\xamtest\bin\Debug\Acr.UserDialogs.dll
+D:\workspace\xamtest\xamtest\xamtest\bin\Debug\Acr.UserDialogs.Interface.dll
+D:\workspace\xamtest\xamtest\xamtest\bin\Debug\Splat.dll
+D:\workspace\xamtest\xamtest\xamtest\bin\Debug\Acr.UserDialogs.Interface.pdb
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.AcrProgressPage.xaml.g.cs
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.LoadingIndicator.xaml.g.cs
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll.mdb
 D:\workspace\xamtest\xamtest\xamtest\bin\Debug\xamtest.dll.mdb

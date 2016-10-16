@@ -121,9 +121,18 @@
     <value>Coming back home!</value>
   </data>
   <data name="FlyOutAnim" xml:space="preserve">
-    <value>Goint to dance :) !</value>
+    <value>Going to dance :) !</value>
+  </data>
+  <data name="hi" xml:space="preserve">
+    <value>hello!</value>
   </data>
   <data name="LangChoice" xml:space="preserve">
     <value>Choose a language</value>
+  </data>
+  <data name="ShowLoader" xml:space="preserve">
+    <value>Show Loader</value>
+  </data>
+  <data name="load" xml:space="preserve">
+    <value>Loading...</value>
   </data>
 </root>

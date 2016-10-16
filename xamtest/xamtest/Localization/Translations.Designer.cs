@@ -71,11 +71,20 @@ namespace xamtest.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Goint to dance :) !.
+        ///   Looks up a localized string similar to Going to dance :) !.
         /// </summary>
         public static string FlyOutAnim {
             get {
                 return ResourceManager.GetString("FlyOutAnim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hello!.
+        /// </summary>
+        public static string hi {
+            get {
+                return ResourceManager.GetString("hi", resourceCulture);
             }
         }
         
@@ -85,6 +94,24 @@ namespace xamtest.Localization {
         public static string LangChoice {
             get {
                 return ResourceManager.GetString("LangChoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading....
+        /// </summary>
+        public static string load {
+            get {
+                return ResourceManager.GetString("load", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Loader.
+        /// </summary>
+        public static string ShowLoader {
+            get {
+                return ResourceManager.GetString("ShowLoader", resourceCulture);
             }
         }
     }

@@ -19,17 +19,22 @@ namespace xamtest
 
         public App()
         {
-            LanguageController = new LanguageController();
+            InitializeComponent();
 
-            var rootPage = new NavigationPage(new TabbedPage
+            AnimationsController = new AnimationsController();
+
+            LanguageController = new LanguageController();
+            LanguageController.SetCurrentCulture(0);
+
+            var rootPage = new NavigationPage(new CarouselPage
             {
-                Title = "Tabbed Page",
                 Children =
                 {
-                    //new RedbitPage(),
+                    //new AcrProgressPage(),
+                    new RedbitPage(),
                     //new RandomAnimations(),
                     //new AnimSettings(),
-                    new FormattedTextsTestPage()
+                    //new FormattedTextsTestPage()
                 }
             });
 
@@ -42,6 +47,8 @@ namespace xamtest
         {
             HockeyAppService = hockey;
         }
+
+        public static AnimationsController AnimationsController { get; set; }
 
         public static LanguageController LanguageController { get; set; }
 

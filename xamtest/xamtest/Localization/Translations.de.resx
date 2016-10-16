@@ -123,7 +123,16 @@
   <data name="FlyOutAnim" xml:space="preserve">
     <value>Tanzt mit :) !</value>
   </data>
+  <data name="hi" xml:space="preserve">
+    <value>Hallo !</value>
+  </data>
   <data name="LangChoice" xml:space="preserve">
     <value>Wiegen Sprache</value>
+  </data>
+  <data name="ShowLoader" xml:space="preserve">
+    <value>Etwas gefahren werden shauen</value>
+  </data>
+  <data name="load" xml:space="preserve">
+    <value>Laden...</value>
   </data>
 </root>

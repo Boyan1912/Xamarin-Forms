@@ -11,6 +11,7 @@ using Android.OS;
 using Xamarin.Forms;
 using xamtest.Localization;
 using System.Reflection;
+using Acr.UserDialogs;
 
 namespace xamtest.Droid
 {
@@ -36,6 +37,7 @@ namespace xamtest.Droid
             //HockeyApp.Android.LoginManager.VerifyLogin(this, Intent);
             //hockeyService.EnableCrashReporting();
 
+            UserDialogs.Init(this);
 
             LoadApplication(new App());
 
