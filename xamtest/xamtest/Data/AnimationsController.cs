@@ -46,9 +46,6 @@ namespace xamtest.Data
                 loadIndicator.FadeTo(1, 100, Easing.Linear).ContinueWith((t) => loadIndicator.Opacity = 1),
                 loadIndicator.Backdrop.FadeTo(0.7, 3000, Easing.Linear),
                 loadIndicator.ProgressBar.ProgressTo(1, 3000, Easing.Linear));
-
-            await Task.Delay(3000);
-            await HideLoader(layout);
         }
 
         public async Task HideLoader(RelativeLayout layout)

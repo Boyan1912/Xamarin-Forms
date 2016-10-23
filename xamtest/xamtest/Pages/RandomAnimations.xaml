@@ -17,6 +17,10 @@
                 </Grid.ColumnDefinitions>
 
             </Grid>
+          <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding SuccessCount}" HorizontalOptions="StartAndExpand" TextColor="Lime" FontSize="22"/>
+          <Label Text="{Binding FailCount}" HorizontalOptions="EndAndExpand" TextColor="Red" FontSize="22"/>
+          </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>

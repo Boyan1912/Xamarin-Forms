@@ -75,6 +75,8 @@ namespace xamtest.Pages
                         return p.Height / 2 + 100;
                     })
                 );
+
+            Content = _layout;
         }
     }
 }

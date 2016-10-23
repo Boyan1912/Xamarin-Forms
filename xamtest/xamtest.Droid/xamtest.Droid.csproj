@@ -187,7 +187,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\GreySquaresLoadingText.gif" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\empty_star.png" />
   </ItemGroup>

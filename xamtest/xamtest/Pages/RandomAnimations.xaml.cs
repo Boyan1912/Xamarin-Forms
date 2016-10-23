@@ -17,15 +17,26 @@ namespace xamtest.Pages
         Random rnd = new Random();
         Easing[] easings = new[] { Easing.BounceIn, Easing.BounceOut, Easing.CubicIn, Easing.CubicInOut, Easing.CubicOut, Easing.Linear, Easing.SinIn, Easing.SinInOut, Easing.SinOut, Easing.SpringIn, Easing.SpringOut };
 
+        private int successful;
+        private int failed;
+        private string successCount;
+        private string failCount;
+
 
         public RandomAnimations()
         {
             InitializeComponent();
             Title = "Random Animations";
+            BindingContext = this;
+
             LoadContent();
             
         }
-        
+
+        public string SuccessCount { get { return successCount; } set { successCount = "Kicked in the ass: \n" + value; OnPropertyChanged(); } }
+
+        public string FailCount { get { return failCount; } set { failCount = "Punched in the nose: \n" + value; OnPropertyChanged(); }
+        }
 
         private Color GetRandomColor()
         {
@@ -34,7 +45,7 @@ namespace xamtest.Pages
 
         private void LoadContent()
         {
-            int rows = rnd.Next(5, 13);
+            int rows = rnd.Next(7, 16);
             int cols = rnd.Next(3, 8);
 
             for (int i = 0; i < rows; i++)
@@ -47,8 +58,9 @@ namespace xamtest.Pages
                         BackgroundColor = GetRandomColor(),
                         HorizontalOptions = LayoutOptions.FillAndExpand,
                         VerticalOptions = LayoutOptions.FillAndExpand,
+                        //Image = "sexy" + rnd.Next(0, 11) + ".jpg",
                     };
-
+                    
                     btn.CommandParameter = btn;
                     grid.Children.Add(btn, j, i);
                 }
@@ -66,11 +78,17 @@ namespace xamtest.Pages
             {
                 return new Command<View>(async delegate (View item)
                 {
+                    successful++;
+                    if (successful > 30)
+                        await App.Navigation.PushAsync(new RandomAnimations());
+
+                    SuccessCount = successful.ToString();
                     (item as Button).Text = Translations.FlyOutAnim;
                     (item as Button).TextColor = GetRandomColor();
                     (item as Button).FontSize = 5;
-                    (item as Button).IsEnabled = false;
+                    //(item as Button).IsEnabled = false;
                     grid.RaiseChild((item as Button));
+                    (item as Button).Command = new Command(() => { failed++; FailCount = failed.ToString(); });
                 //start random animation
                 await Task.WhenAll(
                         item.ColorTo(item.BackgroundColor, GetRandomColor(), x => item.BackgroundColor = x, 4000, easings[rnd.Next(easings.Length)]),
@@ -95,7 +113,8 @@ namespace xamtest.Pages
                         );
 
                     (item as Button).Text = "";
-                    (item as Button).IsEnabled = true;
+                    //(item as Button).IsEnabled = true;
+                    (item as Button).Command = AnimateBtn;
                 });
             }
         }

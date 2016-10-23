@@ -31,6 +31,7 @@ namespace xamtest.Pages
             this.Content = _layout;
 
             Title = "Redbit animateable button";
+
         }
 
         private void CreateButton()
