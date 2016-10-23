@@ -131,7 +131,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GettingStarted.Xamarin" />
     <EmbeddedResource Include="Localization\Translations.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Translations.bg.Designer.cs</LastGenOutput>

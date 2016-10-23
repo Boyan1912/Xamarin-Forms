@@ -14,7 +14,6 @@ namespace xamtest.Models
         string Text { get; set; }
 
         string TranslateKey { get; set; }
-        
     }
     
     public class Label : Xamarin.Forms.Label, ITextContainer

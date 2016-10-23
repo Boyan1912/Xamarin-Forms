@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><color android:color="@color/splash_background" /></item><item><bitmap android:src="@drawable/gss256" android:tileMode="disabled" android:gravity="center" /></item><TextView android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Launching app..." android:textAppearance="?android:attr/textAppearanceLarge" /><!--<webview android:drawable="@drawable/webview"/>--></layer-list><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SplashActivity" >
+<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gss256" />
+  <TextView
+         android:id="@+id/message"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:text="Launching app..."
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>-->

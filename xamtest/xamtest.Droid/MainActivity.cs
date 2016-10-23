@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
 
 using Xamarin.Forms;
 using xamtest.Localization;
@@ -15,21 +16,26 @@ using Acr.UserDialogs;
 
 namespace xamtest.Droid
 {
-    [Activity(Label = "xamtest", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "@string/app_name", Icon = "@drawable/empty_star", Theme = "@style/MainTheme.Base", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
-            
-            App.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
-            App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
-
             base.OnCreate(savedInstanceState);
+            //SetTheme(Resource.Style.MainTheme);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
+            App.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
+            App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+
+            LoadApplication(new App());
+
+            AddShortcut();
+            
             //var hockeyService = new HockeyAppService(ApplicationContext);
             //hockeyService.Register(this, "4f6a452f03e641e289ac097c81a3e3c4");
             //hockeyService.CheckForUpdates(this);
@@ -37,13 +43,28 @@ namespace xamtest.Droid
             //HockeyApp.Android.LoginManager.VerifyLogin(this, Intent);
             //hockeyService.EnableCrashReporting();
 
-            UserDialogs.Init(this);
-
-            LoadApplication(new App());
-
+            //UserDialogs.Init(this);
+            
         }
 
 
+        private void AddShortcut()
+        {
+            //Adding shortcut for MainActivity 
+            //on Home screen
+            Intent shortcutIntent = new Intent(this, typeof(MainActivity));
+
+            shortcutIntent.SetAction(Intent.ActionMain);
+
+            Intent addIntent = new Intent();
+            addIntent.PutExtra(Intent.ExtraShortcutIntent, shortcutIntent);
+            addIntent.PutExtra(Intent.ExtraShortcutName, Resource.String.app_name);
+            addIntent.PutExtra(Intent.ExtraShortcutIconResource, Intent.ShortcutIconResource.FromContext(this, Resource.Drawable.empty_star));
+
+            addIntent.SetAction("com.android.launcher.action.INSTALL_SHORTCUT");
+            addIntent.PutExtra("duplicate", false);  //may it's already there so don't duplicate
+            this.SendBroadcast(addIntent);
+        }
         //protected override void OnPause()
         //{
         //    base.OnPause();

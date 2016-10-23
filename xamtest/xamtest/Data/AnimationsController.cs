@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using xamtest.CustomViews;
+using xamtest.Localization;
+using xamtest.Models;
 
 namespace xamtest.Data
 {
@@ -58,6 +60,28 @@ namespace xamtest.Data
             layout.Children.Remove(loadIndicator);
             layout.Children.Remove(loadIndicator.Backdrop);
             loadIndicator.ProgressBar.Progress = 0;
+        }
+
+        public async Task RotateChangingText(ITextContainer control)
+        {
+            View textView = control as View;
+            textView.AnchorX = 0.5;
+            textView.AnchorY = 0.5;
+            string translation = Translations.ResourceManager.GetString(control.TranslateKey);
+            if (translation != null)
+            {
+                await textView.RotateXTo(90, 300, Easing.CubicOut);
+                control.Text = translation;
+                await Task.Delay(50);
+                await textView.RotateXTo(0, 500, Easing.CubicOut);
+            }
+            else
+            {
+                await textView.RotateXTo(90, 300, Easing.CubicOut);
+                control.Text = control.TranslateKey;
+                await Task.Delay(50);
+                await textView.RotateXTo(0, 500, Easing.CubicOut);
+            }
         }
     }
 

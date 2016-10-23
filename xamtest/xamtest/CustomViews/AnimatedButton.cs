@@ -70,7 +70,6 @@ namespace xamtest.CustomViews
                 LineBreakMode = LineBreakMode.NoWrap
                 
             };
-            _textLabel.TranslateText();
             _layout.Children.Add(_image);
             _layout.Children.Add(_textLabel);
 

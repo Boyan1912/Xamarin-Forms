@@ -23,7 +23,7 @@ namespace xamtest.Pages
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 HorizontalOptions = LayoutOptions.FillAndExpand
             };
-            
+
             CreateButton();
             CreatePanel();
 
@@ -33,14 +33,11 @@ namespace xamtest.Pages
 
         private void CreateButton()
         {
-            
+
             // create the button
             _layout.Children.Add(
-                new AnimatedButton("LangChoice", AnimatePanel)
-                {
-                    BackgroundColor = Color.Olive,
-                    TextColor = Color.Black,
-                    Padding = 20,
+                new WebView {
+                    Source = "https://www.onlinevideoconverter.com/video-converter#texturl",
                 },
                     Constraint.RelativeToParent((p) =>
                     {
@@ -48,97 +45,93 @@ namespace xamtest.Pages
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return 10;
+                        return 5;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Width / 2 - 5;
+                        return p.Width;
                     }),
 
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Height / 6;
+                        return 60;
                     })
                 );
+            //bool goUp = true;
+            //var downBtn = new xamtest.Models.MyButton()
+            //{
+            //    BackgroundColor = Color.Maroon,
+            //    TextColor = Color.Black,
+            //    TranslateKey = "Go to start",
+            //    VerticalOptions = LayoutOptions.End,
+            //    HorizontalOptions = LayoutOptions.End,
+            //    Command = new Command(async (btn) =>
+            //    {
+            //        //await App.AnimationsController.ShowLoader(_layout);
+            //        var button = btn as Button;
+            //        bool finished = goUp ? await button.LayoutTo(new Rectangle(0, 0, 60, 30), 1000, Easing.SinOut) : await button.LayoutTo(new Rectangle((button.Parent as View).Width - button.Width, (button.Parent as View).Height - button.Height, 30, 60), 2000, Easing.SinOut);
 
-            _layout.Children.Add(
-                new xamtest.Models.MyButton()
-                {
-                    BackgroundColor = Color.Maroon,
-                    TextColor = Color.Black,
-                    TranslateKey = "ShowLoader",
-                    Command = new Command(async () => 
-                    {
-                        //this.IsBusy = !this.IsBusy;
-                        //if (this.IsBusy)
-                            await App.AnimationsController.ShowLoader(_layout);
-                        //else
-                        //    await App.AnimationsController.HideLoader(_layout);
-                    })
-                },
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return p.Width / 2 + 5;
-                    }),
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return p.Height - p.Width / 4;
-                    }),
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return p.Width / 2 - 15;
-                    }),
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return p.Height / 6;
-                    })
-                );
+            //        goUp = !goUp;
+            //    }),
+            //};
+            //downBtn.CommandParameter = downBtn;
 
-            _layout.Children.Add(
-                new xamtest.Models.Entry()
-                {
-                    BackgroundColor = Color.Red,
-                    TextColor = Color.White,
-                    TranslateKey = "FlyOutAnim"
-                },
+            //StackLayout btnParent = new StackLayout() { BackgroundColor = Color.Aqua };
+            //btnParent.GestureRecognizers.Add(new TapGestureRecognizer
+            //{
+            //    Command = new Command(async() =>
+            //    {
+            //        await downBtn.LayoutTo(new Rectangle(new Random().Next(-20, 100), new Random().Next(-20, 100), new Random().Next(200), new Random().Next(200)), 800, Easing.SinIn);
+            //    })
+            //});
+            //Grid border = new Grid
+            //{
+            //    BackgroundColor = Color.Maroon,
+            //    Padding = new Thickness(1)
+            //};
+            //border.Children.Add(btnParent);
+            //btnParent.Children.Add(downBtn);
+
+            //_layout.Children.Add(border,
+            //        Constraint.RelativeToParent((p) =>
+            //        {
+            //            return 10;
+            //        }),
+            //        Constraint.RelativeToParent((p) =>
+            //        {
+            //            return 10;
+            //        }),
+            //        Constraint.RelativeToParent((p) =>
+            //        {
+            //            return p.Width - 50;
+            //        }),
+            //        Constraint.RelativeToParent((p) =>
+            //        {
+            //            return p.Height - 150;
+            //        })
+            //    );
+
+            var webView = new WebView
+            {
+                Source = "https://www.youtube.com/feed/subscriptions"
+            };
+
+            _layout.Children.Add(webView,
                     Constraint.RelativeToParent((p) =>
                     {
-                        return 10;
+                        return 0;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Height / 2;
+                        return p.Height / 2 - 200;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Width / 2;
+                        return p.Width;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Height / 6;
-                    })
-                );
-            _layout.Children.Add(
-                new xamtest.Models.Label()
-                {
-                    TextColor = Color.Black,
-                    TranslateKey = "hi"
-                },
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return p.Width / 2;
-                    }),
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return p.Height / 2;
-                    }),
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return 50;
-                    }),
-                    Constraint.RelativeToParent((p) =>
-                    {
-                        return 30;
+                        return p.Height / 2 + 100;
                     })
                 );
         }

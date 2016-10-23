@@ -23,7 +23,7 @@ namespace xamtest.Behaviors
         }
         
         public Picker LanguagePicker { get; set; }
-
+        
         public ResourceManager Resmgr { get; set; }
 
         public string TranslateKey { get; set; }
