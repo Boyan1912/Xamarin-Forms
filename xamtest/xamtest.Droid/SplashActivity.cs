@@ -17,11 +17,9 @@ using Android.Graphics;
 
 namespace xamtest.Droid
 {
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
+    [Activity(Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
-        //static readonly string TAG = "X:" + typeof(SplashActivity).Name;
-
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
             base.OnCreate(savedInstanceState, persistentState);

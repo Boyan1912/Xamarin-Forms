@@ -185,22 +185,17 @@
     <AndroidResource Include="Resources\drawable\gss256.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\loadingimagehtml.html" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\GreySquaresLoadingText.gif" />
   </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\webview.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\htmls\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\empty_star.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sexy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

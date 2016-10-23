@@ -59,7 +59,7 @@ namespace xamtest.Droid
             Intent addIntent = new Intent();
             addIntent.PutExtra(Intent.ExtraShortcutIntent, shortcutIntent);
             addIntent.PutExtra(Intent.ExtraShortcutName, Resource.String.app_name);
-            addIntent.PutExtra(Intent.ExtraShortcutIconResource, Intent.ShortcutIconResource.FromContext(this, Resource.Drawable.empty_star));
+            addIntent.PutExtra(Intent.ExtraShortcutIconResource, Intent.ShortcutIconResource.FromContext(this, Resource.Drawable.sexy));
 
             addIntent.SetAction("com.android.launcher.action.INSTALL_SHORTCUT");
             addIntent.PutExtra("duplicate", false);  //may it's already there so don't duplicate

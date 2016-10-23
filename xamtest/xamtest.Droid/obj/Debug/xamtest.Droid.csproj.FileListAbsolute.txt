@@ -176,10 +176,9 @@ D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\android\assets\Acr.UserDial
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\android\assets\Splat.dll.mdb
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\splash_screen.xml
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\gss256.png
-D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\loadingimagehtml.html
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\greysquaresloadingtext.gif
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\empty_star.png
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\values\strings.xml
-D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\layout\webview.xml
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy.png
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\xamtest.Droid.dll.mdb
 D:\workspace\xamtest\xamtest\xamtest.Droid\bin\Debug\xamtest.Droid.dll.mdb

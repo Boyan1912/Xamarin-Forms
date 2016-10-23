@@ -2673,25 +2673,25 @@ containing a value of this type.
         public static final int ic_tv_dark=0x7f020095;
         public static final int ic_tv_light=0x7f020096;
         public static final int icon=0x7f020097;
-        public static final int loadingimagehtml=0x7f020098;
-        public static final int mr_dialog_material_background_dark=0x7f020099;
-        public static final int mr_dialog_material_background_light=0x7f02009a;
-        public static final int mr_ic_audiotrack_light=0x7f02009b;
-        public static final int mr_ic_cast_dark=0x7f02009c;
-        public static final int mr_ic_cast_light=0x7f02009d;
-        public static final int mr_ic_close_dark=0x7f02009e;
-        public static final int mr_ic_close_light=0x7f02009f;
-        public static final int mr_ic_media_route_connecting_mono_dark=0x7f0200a0;
-        public static final int mr_ic_media_route_connecting_mono_light=0x7f0200a1;
-        public static final int mr_ic_media_route_mono_dark=0x7f0200a2;
-        public static final int mr_ic_media_route_mono_light=0x7f0200a3;
-        public static final int mr_ic_pause_dark=0x7f0200a4;
-        public static final int mr_ic_pause_light=0x7f0200a5;
-        public static final int mr_ic_play_dark=0x7f0200a6;
-        public static final int mr_ic_play_light=0x7f0200a7;
+        public static final int mr_dialog_material_background_dark=0x7f020098;
+        public static final int mr_dialog_material_background_light=0x7f020099;
+        public static final int mr_ic_audiotrack_light=0x7f02009a;
+        public static final int mr_ic_cast_dark=0x7f02009b;
+        public static final int mr_ic_cast_light=0x7f02009c;
+        public static final int mr_ic_close_dark=0x7f02009d;
+        public static final int mr_ic_close_light=0x7f02009e;
+        public static final int mr_ic_media_route_connecting_mono_dark=0x7f02009f;
+        public static final int mr_ic_media_route_connecting_mono_light=0x7f0200a0;
+        public static final int mr_ic_media_route_mono_dark=0x7f0200a1;
+        public static final int mr_ic_media_route_mono_light=0x7f0200a2;
+        public static final int mr_ic_pause_dark=0x7f0200a3;
+        public static final int mr_ic_pause_light=0x7f0200a4;
+        public static final int mr_ic_play_dark=0x7f0200a5;
+        public static final int mr_ic_play_light=0x7f0200a6;
         public static final int notification_template_icon_bg=0x7f0200ab;
-        public static final int roundedbg=0x7f0200a8;
-        public static final int roundedbgdark=0x7f0200a9;
+        public static final int roundedbg=0x7f0200a7;
+        public static final int roundedbgdark=0x7f0200a8;
+        public static final int sexy=0x7f0200a9;
         public static final int splash_screen=0x7f0200aa;
     }
     public static final class id {
@@ -2784,7 +2784,6 @@ containing a value of this type.
         public static final int loadingProgressBar=0x7f07008e;
         public static final int loadingProgressWheel=0x7f070091;
         public static final int media_actions=0x7f0700ae;
-        public static final int message=0x7f0700bb;
         public static final int middle=0x7f07001d;
         public static final int mini=0x7f070037;
         public static final int mr_art=0x7f07009d;
@@ -2874,7 +2873,6 @@ containing a value of this type.
         public static final int view_header=0x7f070085;
         public static final int view_offset_helper=0x7f07000a;
         public static final int volume_item_container=0x7f0700a3;
-        public static final int webView=0x7f0700ba;
         public static final int web_update_details=0x7f070089;
         public static final int withText=0x7f070022;
         public static final int wrap_content=0x7f070015;
@@ -2967,7 +2965,6 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f03003f;
         public static final int tabbar=0x7f030040;
         public static final int toolbar=0x7f030041;
-        public static final int webview=0x7f030042;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f08000f;
@@ -3243,7 +3240,6 @@ containing a value of this type.
         /**  Base theme applied no matter what API 
          */
         public static final int MainTheme_Base=0x7f0a0176;
-        public static final int MyTheme_Splash=0x7f0a0178;
         public static final int Platform_AppCompat=0x7f0a0032;
         public static final int Platform_AppCompat_Light=0x7f0a0033;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f0a0095;
@@ -3268,6 +3264,7 @@ containing a value of this type.
         public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0a004e;
         public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0a004f;
         public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0a0050;
+        public static final int SplashTheme=0x7f0a0178;
         public static final int TextAppearance_AppCompat=0x7f0a00d1;
         public static final int TextAppearance_AppCompat_Body1=0x7f0a00d2;
         public static final int TextAppearance_AppCompat_Body2=0x7f0a00d3;
