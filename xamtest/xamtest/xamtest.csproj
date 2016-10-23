@@ -83,13 +83,13 @@
     <Compile Include="Pages\AnimSettings.xaml.cs">
       <DependentUpon>AnimSettings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\FormattedTextsTestPage.xaml.cs">
-      <DependentUpon>FormattedTextsTestPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\RandomAnimations.xaml.cs">
       <DependentUpon>RandomAnimations.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RedbitPage.cs" />
+    <Compile Include="Pages\WebViewsPage.xaml.cs">
+      <DependentUpon>WebViewsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -169,12 +169,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\FormattedTextsTestPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="App.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -201,6 +195,12 @@
     <EmbeddedResource Include="CustomViews\LoadingIndicator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\WebViewsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

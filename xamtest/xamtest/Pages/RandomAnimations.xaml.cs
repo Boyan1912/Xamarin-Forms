@@ -29,7 +29,7 @@ namespace xamtest.Pages
 
         private Color GetRandomColor()
         {
-            return Color.FromRgba(rnd.NextDouble(), rnd.NextDouble(), rnd.NextDouble(), (rnd.NextDouble())).WithHue(rnd.NextDouble()).WithLuminosity(rnd.NextDouble()).WithSaturation(rnd.NextDouble());
+            return Color.FromRgba(rnd.NextDouble(), rnd.NextDouble(), rnd.NextDouble(), (1)).WithHue(rnd.NextDouble()).WithLuminosity(rnd.NextDouble()).WithSaturation(rnd.NextDouble());
         }
 
         private void LoadContent()
@@ -70,6 +70,7 @@ namespace xamtest.Pages
                     (item as Button).TextColor = GetRandomColor();
                     (item as Button).FontSize = 5;
                     (item as Button).IsEnabled = false;
+                    grid.RaiseChild((item as Button));
                 //start random animation
                 await Task.WhenAll(
                         item.ColorTo(item.BackgroundColor, GetRandomColor(), x => item.BackgroundColor = x, 4000, easings[rnd.Next(easings.Length)]),

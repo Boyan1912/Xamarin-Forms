@@ -2,22 +2,34 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK.AndroidBindings\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Acr.Support.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Acr.UserDialogs\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\AndHUD\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK.AndroidBindings\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Splat\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\Acr.Support.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\Acr.UserDialogs\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\AndHUD\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\__library_projects__\HockeySDK.AndroidBindings\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\__library_projects__\HockeySDK\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\Splat\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK.AndroidBindings.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>E:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Acr.Support.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Acr.UserDialogs.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\AndHUD.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK.AndroidBindings.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\HockeySDK.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Splat.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

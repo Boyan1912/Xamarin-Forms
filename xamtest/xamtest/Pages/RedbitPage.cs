@@ -29,6 +29,8 @@ namespace xamtest.Pages
 
             // set the content
             this.Content = _layout;
+
+            Title = "Redbit animateable button";
         }
 
         private void CreateButton()
@@ -36,8 +38,11 @@ namespace xamtest.Pages
 
             // create the button
             _layout.Children.Add(
-                new WebView {
-                    Source = "https://www.onlinevideoconverter.com/video-converter#texturl",
+                new AnimatedButton("LangChoice", AnimatePanel)
+                {
+                    BackgroundColor = Color.Olive,
+                    TextColor = Color.Black,
+                    Padding = 20,
                 },
                     Constraint.RelativeToParent((p) =>
                     {
@@ -45,95 +50,74 @@ namespace xamtest.Pages
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return 5;
+                        return 10;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Width;
+                        return p.Width / 2 - 5;
                     }),
 
                     Constraint.RelativeToParent((p) =>
                     {
-                        return 60;
+                        return p.Height / 6;
                     })
                 );
-            //bool goUp = true;
-            //var downBtn = new xamtest.Models.MyButton()
-            //{
-            //    BackgroundColor = Color.Maroon,
-            //    TextColor = Color.Black,
-            //    TranslateKey = "Go to start",
-            //    VerticalOptions = LayoutOptions.End,
-            //    HorizontalOptions = LayoutOptions.End,
-            //    Command = new Command(async (btn) =>
-            //    {
-            //        //await App.AnimationsController.ShowLoader(_layout);
-            //        var button = btn as Button;
-            //        bool finished = goUp ? await button.LayoutTo(new Rectangle(0, 0, 60, 30), 1000, Easing.SinOut) : await button.LayoutTo(new Rectangle((button.Parent as View).Width - button.Width, (button.Parent as View).Height - button.Height, 30, 60), 2000, Easing.SinOut);
 
-            //        goUp = !goUp;
-            //    }),
-            //};
-            //downBtn.CommandParameter = downBtn;
 
-            //StackLayout btnParent = new StackLayout() { BackgroundColor = Color.Aqua };
-            //btnParent.GestureRecognizers.Add(new TapGestureRecognizer
-            //{
-            //    Command = new Command(async() =>
-            //    {
-            //        await downBtn.LayoutTo(new Rectangle(new Random().Next(-20, 100), new Random().Next(-20, 100), new Random().Next(200), new Random().Next(200)), 800, Easing.SinIn);
-            //    })
-            //});
-            //Grid border = new Grid
-            //{
-            //    BackgroundColor = Color.Maroon,
-            //    Padding = new Thickness(1)
-            //};
-            //border.Children.Add(btnParent);
-            //btnParent.Children.Add(downBtn);
-
-            //_layout.Children.Add(border,
-            //        Constraint.RelativeToParent((p) =>
-            //        {
-            //            return 10;
-            //        }),
-            //        Constraint.RelativeToParent((p) =>
-            //        {
-            //            return 10;
-            //        }),
-            //        Constraint.RelativeToParent((p) =>
-            //        {
-            //            return p.Width - 50;
-            //        }),
-            //        Constraint.RelativeToParent((p) =>
-            //        {
-            //            return p.Height - 150;
-            //        })
-            //    );
-
-            var webView = new WebView
+            bool goUp = true;
+            var downBtn = new xamtest.Models.MyButton()
             {
-                Source = "https://www.youtube.com/feed/subscriptions"
-            };
+                BackgroundColor = Color.Maroon,
+                TextColor = Color.Black,
+                TranslateKey = "layout to random place",
+                VerticalOptions = LayoutOptions.End,
+                HorizontalOptions = LayoutOptions.End,
+                Command = new Command(async (btn) =>
+                {
+                    //await App.AnimationsController.ShowLoader(_layout);
+                    var button = btn as Button;
+                    bool finished = goUp ? await button.LayoutTo(new Rectangle(0, 0, 60, 30), 1000, Easing.SinOut) : await button.LayoutTo(new Rectangle((button.Parent as View).Width - button.Width, (button.Parent as View).Height - button.Height, 30, 60), 2000, Easing.SinOut);
 
-            _layout.Children.Add(webView,
+                    goUp = !goUp;
+                }),
+            };
+            downBtn.CommandParameter = downBtn;
+
+            StackLayout btnParent = new StackLayout() { BackgroundColor = Color.Aqua };
+            btnParent.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(async () =>
+                {
+                    await downBtn.LayoutTo(new Rectangle(new Random().Next(-20, 100), new Random().Next(-20, 100), new Random().Next(200), new Random().Next(200)), 800, Easing.SinIn);
+                })
+            });
+            Grid border = new Grid
+            {
+                BackgroundColor = Color.Maroon,
+                Padding = new Thickness(1)
+            };
+            border.Children.Add(btnParent);
+            btnParent.Children.Add(downBtn);
+
+            _layout.Children.Add(border,
                     Constraint.RelativeToParent((p) =>
                     {
-                        return 0;
+                        return 10;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Height / 2 - 200;
+                        return 100;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Width;
+                        return p.Width - 50;
                     }),
                     Constraint.RelativeToParent((p) =>
                     {
-                        return p.Height / 2 + 100;
+                        return p.Height - 150;
                     })
                 );
+
         }
 
         private double _panelWidth = -1;
@@ -156,17 +140,17 @@ namespace xamtest.Pages
                         },
                         new AnimatedButton ("English", () => {
                             AnimatePanel();
-                            //ChangeBackgroundColorReddish();
+                            ChangeBackgroundColorReddish();
                             App.LanguageController.SetCurrentCulture(0);
                         }, "flag_en.png"),
                         new AnimatedButton ("Deutsch", () => {
                             AnimatePanel();
-                            //ChangeBackgroundColorBlueish();
+                            ChangeBackgroundColorBlueish();
                             App.LanguageController.SetCurrentCulture(1);
                         }, "flag_de.png"),
                         new AnimatedButton ("Български", () => {
                             AnimatePanel();
-                            //ChangeBackgroundColorGreenish();
+                            ChangeBackgroundColorGreenish();
                             App.LanguageController.SetCurrentCulture(2);
                         }, "flag_bg.png"),
                         new AnimatedButton ("Black to White Anim", () => {
@@ -177,7 +161,8 @@ namespace xamtest.Pages
                     Padding = 15,
                     VerticalOptions = LayoutOptions.FillAndExpand,
                     HorizontalOptions = LayoutOptions.EndAndExpand,
-                    BackgroundColor = Color.FromRgba(0, 0, 0, 180)
+                    BackgroundColor = Color.FromRgba(0, 0, 0, 180),
+                    WidthRequest = 100
                 };
 
                 // add to layout

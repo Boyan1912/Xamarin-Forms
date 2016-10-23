@@ -99,9 +99,14 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "xamtest.Droid.dll" comes first in this list. */
 		"xamtest.Droid.dll",
+		"Acr.Support.Android.dll",
+		"Acr.UserDialogs.dll",
+		"Acr.UserDialogs.Interface.dll",
+		"AndHUD.dll",
 		"FormsViewGroup.dll",
 		"HockeySDK.AndroidBindings.dll",
 		"HockeySDK.dll",
+		"Splat.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",

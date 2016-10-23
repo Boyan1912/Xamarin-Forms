@@ -32,7 +32,8 @@ namespace xamtest
                 {
                     //new AcrProgressPage(),
                     new RedbitPage(),
-                    //new RandomAnimations(),
+                    new RandomAnimations(),
+                    new WebViewsPage()
                     //new AnimSettings(),
                     //new FormattedTextsTestPage()
                 }
