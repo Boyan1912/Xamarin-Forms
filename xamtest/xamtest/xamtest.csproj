@@ -58,6 +58,7 @@
     <Compile Include="Data\TranslateByKeyExtension.cs" />
     <Compile Include="Data\TranslateExtension.cs" />
     <Compile Include="Extensions\Animations.cs" />
+    <Compile Include="Extensions\ViewsExtensions.cs" />
     <Compile Include="Localization\Translations.bg.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,16 +78,22 @@
     <Compile Include="Models\AnimSetViewModel.cs" />
     <Compile Include="Models\ITextContainer.cs" />
     <Compile Include="Models\ProgressViewModel.cs" />
-    <Compile Include="Pages\AcrProgressPage.xaml.cs">
-      <DependentUpon>AcrProgressPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\AnimSettings.xaml.cs">
       <DependentUpon>AnimSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BasePage.xaml.cs">
+      <DependentUpon>BasePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MasterDetailPP.xaml.cs">
+      <DependentUpon>MasterDetailPP.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RandomAnimations.xaml.cs">
       <DependentUpon>RandomAnimations.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RedbitPage.cs" />
+    <Compile Include="Pages\ShowItemFromBelow.xaml.cs">
+      <DependentUpon>ShowItemFromBelow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\WebViewsPage.xaml.cs">
       <DependentUpon>WebViewsPage.xaml</DependentUpon>
     </Compile>
@@ -181,12 +188,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\AcrProgressPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Images\flag_bg.png" />
     <EmbeddedResource Include="Images\flag_de.png" />
     <EmbeddedResource Include="Images\flag_en.png" />
@@ -199,6 +200,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\WebViewsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MasterDetailPP.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ShowItemFromBelow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\BasePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

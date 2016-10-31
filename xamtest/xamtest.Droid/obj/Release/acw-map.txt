@@ -1,11 +1,11 @@
-xamtest.Droid.MainActivity, xamtest.Droid;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.Droid.MainActivity, xamtest.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.Droid.MainActivity;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.droid.MainActivity;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.Droid.SplashActivity, xamtest.Droid;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
-xamtest.Droid.SplashActivity, xamtest.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
-xamtest.Droid.SplashActivity;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
-xamtest.droid.SplashActivity;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
+xamtest.Droid.MainActivity, xamtest.Droid;md59e3d6e0d72fead26a7400eecda16720a.MainActivity
+xamtest.Droid.MainActivity, xamtest.Droid, Version=1.1.6147.1295, Culture=neutral, PublicKeyToken=null;md59e3d6e0d72fead26a7400eecda16720a.MainActivity
+xamtest.Droid.MainActivity;md59e3d6e0d72fead26a7400eecda16720a.MainActivity
+xamtest.droid.MainActivity;md59e3d6e0d72fead26a7400eecda16720a.MainActivity
+xamtest.Droid.SplashActivity, xamtest.Droid;md59e3d6e0d72fead26a7400eecda16720a.SplashActivity
+xamtest.Droid.SplashActivity, xamtest.Droid, Version=1.1.6147.1295, Culture=neutral, PublicKeyToken=null;md59e3d6e0d72fead26a7400eecda16720a.SplashActivity
+xamtest.Droid.SplashActivity;md59e3d6e0d72fead26a7400eecda16720a.SplashActivity
+xamtest.droid.SplashActivity;md59e3d6e0d72fead26a7400eecda16720a.SplashActivity
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks

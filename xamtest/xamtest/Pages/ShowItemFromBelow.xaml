@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="xamtest.Pages.ShowItemFromBelow"
+                xmlns:local="clr-namespace:xamtest.Pages;assembly=xamtest"
+                 >
+    <local:BasePage.Content>
+    <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="layout">
+        <Image Source="sexy_big.jpg" x:Name="image" Aspect="Fill"
+                   HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Constant=0}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Constant=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"/>
+        <Button x:Name="ShowDownFromTop" BackgroundColor="Navy" Text="Show down from top" TextColor="White"/>
+        <Button x:Name="ShowUpFromBottom" BackgroundColor="Pink" Text="Show up from below" TextColor="White"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.9}"
+                    />
+        <Button x:Name="ShowUpFromLeft" BackgroundColor="Pink" Text="Show up from left" TextColor="White"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.05}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.04}"
+                    />
+        <Button x:Name="ShowUpFromRight" BackgroundColor="Navy" Text="Show up from right" TextColor="White"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.05}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.9}"
+                    />
+
+        <!--Panel Up-->
+        <ScrollView x:Name="PanelUp" 
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Constant=0}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=-1.1}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.7}">
+            <StackLayout x:Name="PanelUpStack"
+                    >
+                <Label Text="something written here" TextColor="Maroon"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Button Text="example btn" TextColor="Aqua"/>
+                <Label Text="ssssssssssssssssssssssssssssssssssssssssssssss" TextColor="Pink"/>
+                <Button Text="example btn" TextColor="Aqua" HorizontalOptions="FillAndExpand"/>
+                <Label Text="something else" TextColor="Blue" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--Panel Down-->
+        <ScrollView x:Name="PanelDown"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Constant=0}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1.1}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.7}">
+                <StackLayout x:Name="PanelDownStack"
+                    >
+                <Label Text="something written here" TextColor="Maroon"/>
+                <Label Text="something else" TextColor="Fuchsia" FontSize="30"/>
+                <Button Text="example btn" TextColor="Aqua"/>
+                <Label Text="ssssssssssssssssssssssssssssssssssssssssssssss" TextColor="Pink"/>
+                <Button Text="example btn" TextColor="Aqua" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </ScrollView>
+
+        <ScrollView x:Name="PanelLeft" 
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=-1}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Constant=0}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.9}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+
+            <StackLayout x:Name="PanelLeftContent">
+                <Label Text="LEFT PANEL" TextColor="Maroon" FontSize="40" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </ScrollView>
+    </RelativeLayout>
+        </local:BasePage.Content>
+</local:BasePage>

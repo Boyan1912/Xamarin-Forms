@@ -1,11 +1,11 @@
-xamtest.Droid.MainActivity, xamtest.Droid;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.Droid.MainActivity, xamtest.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.Droid.MainActivity;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.droid.MainActivity;md5313ed8b6b9318674eb564226472a13e6.MainActivity
-xamtest.Droid.SplashActivity, xamtest.Droid;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
-xamtest.Droid.SplashActivity, xamtest.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
-xamtest.Droid.SplashActivity;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
-xamtest.droid.SplashActivity;md5313ed8b6b9318674eb564226472a13e6.SplashActivity
+xamtest.Droid.MainActivity, xamtest.Droid;md5194897149915a34ed6803875b683574c.MainActivity
+xamtest.Droid.MainActivity, xamtest.Droid, Version=1.1.6147.24185, Culture=neutral, PublicKeyToken=null;md5194897149915a34ed6803875b683574c.MainActivity
+xamtest.Droid.MainActivity;md5194897149915a34ed6803875b683574c.MainActivity
+xamtest.droid.MainActivity;md5194897149915a34ed6803875b683574c.MainActivity
+xamtest.Droid.SplashActivity, xamtest.Droid;md5194897149915a34ed6803875b683574c.SplashActivity
+xamtest.Droid.SplashActivity, xamtest.Droid, Version=1.1.6147.24185, Culture=neutral, PublicKeyToken=null;md5194897149915a34ed6803875b683574c.SplashActivity
+xamtest.Droid.SplashActivity;md5194897149915a34ed6803875b683574c.SplashActivity
+xamtest.droid.SplashActivity;md5194897149915a34ed6803875b683574c.SplashActivity
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks

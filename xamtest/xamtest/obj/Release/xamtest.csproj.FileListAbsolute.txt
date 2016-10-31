@@ -74,7 +74,6 @@ D:\workspace\xamtest\xamtest\xamtest\obj\Release\de\xamtest.resources.dll
 D:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.dll
 D:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.pdb
 D:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.Pages.WebViewsPage.xaml.g.cs
-D:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.dll.mdb
-D:\workspace\xamtest\xamtest\xamtest\bin\Release\xamtest.dll.mdb
+D:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.Pages.MasterDetailPP.xaml.g.cs
 D:\workspace\xamtest\xamtest\xamtest\obj\Release\xamtest.dll.mdb
 D:\workspace\xamtest\xamtest\xamtest\bin\Release\xamtest.dll.mdb

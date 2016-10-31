@@ -30,10 +30,10 @@ namespace xamtest
             {
                 Children =
                 {
-                    //new AcrProgressPage(),
-                    new RedbitPage(),
-                    new RandomAnimations(),
-                    new WebViewsPage()
+                    new ShowItemFromBelow(),
+                    //new RandomAnimations(),
+                    //new RedbitPage(),
+                    //new WebViewsPage()
                     //new AnimSettings(),
                     //new FormattedTextsTestPage()
                 }

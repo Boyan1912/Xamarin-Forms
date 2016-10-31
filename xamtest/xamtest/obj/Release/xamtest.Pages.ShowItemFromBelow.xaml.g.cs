@@ -14,11 +14,11 @@ namespace xamtest.Pages {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class AcrProgressPage : global::Xamarin.Forms.ContentPage {
+    public partial class ShowItemFromBelow : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(AcrProgressPage));
+            this.LoadFromXaml(typeof(ShowItemFromBelow));
         }
     }
 }

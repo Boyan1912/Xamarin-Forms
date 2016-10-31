@@ -34,7 +34,7 @@ namespace xamtest.Droid
 
             LoadApplication(new App());
 
-            AddShortcut();
+            //AddShortcut();
             
             //var hockeyService = new HockeyAppService(ApplicationContext);
             //hockeyService.Register(this, "4f6a452f03e641e289ac097c81a3e3c4");

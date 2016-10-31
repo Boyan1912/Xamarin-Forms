@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamtest.Pages.MasterDetailPP"
+              Title="something">
+
+  <MasterDetailPage.Master>
+    <ContentPage>
+      <ContentPage.Content>
+        <StackLayout>
+          <StackLayout x:Name="menuItemOne">
+            <Label Text="Select Page 1" TextColor="Maroon" />
+          </StackLayout>
+          <StackLayout x:Name="menuItemTwo">
+            <Label Text="Select Page 2" TextColor="Maroon" />
+          </StackLayout>
+        </StackLayout>
+      </ContentPage.Content>
+    </ContentPage>
+  </MasterDetailPage.Master>
+</MasterDetailPage>

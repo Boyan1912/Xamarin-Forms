@@ -16,7 +16,7 @@
                 <Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
             </Style>
 
-
+        
         </ResourceDictionary>
     </Application.Resources>
     

@@ -180,5 +180,6 @@ D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\greysquaresloa
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\empty_star.png
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\values\strings.xml
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy.png
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy_big.jpg
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\xamtest.Droid.dll.mdb
 D:\workspace\xamtest\xamtest\xamtest.Droid\bin\Debug\xamtest.Droid.dll.mdb

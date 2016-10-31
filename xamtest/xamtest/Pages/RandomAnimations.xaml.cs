@@ -28,7 +28,6 @@ namespace xamtest.Pages
             InitializeComponent();
             Title = "Random Animations";
             BindingContext = this;
-
             LoadContent();
             
         }
@@ -79,7 +78,7 @@ namespace xamtest.Pages
                 return new Command<View>(async delegate (View item)
                 {
                     successful++;
-                    if (successful > 30)
+                    if (successful > 100)
                         await App.Navigation.PushAsync(new RandomAnimations());
 
                     SuccessCount = successful.ToString();
@@ -89,8 +88,10 @@ namespace xamtest.Pages
                     //(item as Button).IsEnabled = false;
                     grid.RaiseChild((item as Button));
                     (item as Button).Command = new Command(() => { failed++; FailCount = failed.ToString(); });
-                //start random animation
-                await Task.WhenAll(
+                    //start random animation
+                try
+                    {
+                        await Task.WhenAll(
                         item.ColorTo(item.BackgroundColor, GetRandomColor(), x => item.BackgroundColor = x, 4000, easings[rnd.Next(easings.Length)]),
                             item.RotateXTo(rnd.Next(500), (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
                             item.RotateYTo(rnd.Next(500), (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
@@ -98,19 +99,21 @@ namespace xamtest.Pages
                             item.TranslateTo(rnd.Next(-App.ScreenWidth + (int)item.X, App.ScreenWidth - (int)item.X), rnd.Next(-App.ScreenHeight + (int)item.Y, App.ScreenHeight - (int)item.Y), (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
                             item.ScaleTo(rnd.NextDouble() * 6, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)])
                         );
-                    // change color
-                    item.BackgroundColor = GetRandomColor();
-                    (item as Button).Text = xamtest.Localization.Translations.FlyInAnim;
-                    (item as Button).TextColor = GetRandomColor();
-                    // go back to where it came from:
-                    await Task.WhenAll(
-                            item.RotateXTo(0, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
-                            item.RotateYTo(0, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
-                            //item.FadeTo(1, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
-                            item.TranslateTo(0, 0, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
-                            item.ScaleTo(1, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
-                            item.ColorTo(item.BackgroundColor, GetRandomColor(), x => item.BackgroundColor = x, 4000, easings[rnd.Next(easings.Length)])
-                        );
+                        // change color
+                        item.BackgroundColor = GetRandomColor();
+                        (item as Button).Text = xamtest.Localization.Translations.FlyInAnim;
+                        (item as Button).TextColor = GetRandomColor();
+                        // go back to where it came from:
+                        await Task.WhenAll(
+                                item.RotateXTo(0, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
+                                item.RotateYTo(0, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
+                                //item.FadeTo(1, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
+                                item.TranslateTo(0, 0, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
+                                item.ScaleTo(1, (uint)rnd.Next(100, 4000), easings[rnd.Next(easings.Length)]),
+                                item.ColorTo(item.BackgroundColor, GetRandomColor(), x => item.BackgroundColor = x, 4000, easings[rnd.Next(easings.Length)])
+                            );
+                    }
+                    catch (Exception) { }
 
                     (item as Button).Text = "";
                     //(item as Button).IsEnabled = true;
