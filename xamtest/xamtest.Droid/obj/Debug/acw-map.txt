@@ -1,11 +1,11 @@
-xamtest.Droid.MainActivity, xamtest.Droid;md5194897149915a34ed6803875b683574c.MainActivity
-xamtest.Droid.MainActivity, xamtest.Droid, Version=1.1.6147.24185, Culture=neutral, PublicKeyToken=null;md5194897149915a34ed6803875b683574c.MainActivity
-xamtest.Droid.MainActivity;md5194897149915a34ed6803875b683574c.MainActivity
-xamtest.droid.MainActivity;md5194897149915a34ed6803875b683574c.MainActivity
-xamtest.Droid.SplashActivity, xamtest.Droid;md5194897149915a34ed6803875b683574c.SplashActivity
-xamtest.Droid.SplashActivity, xamtest.Droid, Version=1.1.6147.24185, Culture=neutral, PublicKeyToken=null;md5194897149915a34ed6803875b683574c.SplashActivity
-xamtest.Droid.SplashActivity;md5194897149915a34ed6803875b683574c.SplashActivity
-xamtest.droid.SplashActivity;md5194897149915a34ed6803875b683574c.SplashActivity
+xamtest.Droid.MainActivity, xamtest.Droid;md53dd34ebdc54b3b81d5433333b886e1ae.MainActivity
+xamtest.Droid.MainActivity, xamtest.Droid, Version=1.1.6174.25449, Culture=neutral, PublicKeyToken=null;md53dd34ebdc54b3b81d5433333b886e1ae.MainActivity
+xamtest.Droid.MainActivity;md53dd34ebdc54b3b81d5433333b886e1ae.MainActivity
+xamtest.droid.MainActivity;md53dd34ebdc54b3b81d5433333b886e1ae.MainActivity
+xamtest.Droid.SplashActivity, xamtest.Droid;md53dd34ebdc54b3b81d5433333b886e1ae.SplashActivity
+xamtest.Droid.SplashActivity, xamtest.Droid, Version=1.1.6174.25449, Culture=neutral, PublicKeyToken=null;md53dd34ebdc54b3b81d5433333b886e1ae.SplashActivity
+xamtest.Droid.SplashActivity;md53dd34ebdc54b3b81d5433333b886e1ae.SplashActivity
+xamtest.droid.SplashActivity;md53dd34ebdc54b3b81d5433333b886e1ae.SplashActivity
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks

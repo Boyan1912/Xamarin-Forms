@@ -50,6 +50,13 @@
     <Compile Include="CustomViews\LoadingIndicator.xaml.cs">
       <DependentUpon>LoadingIndicator.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomViews\PhotoGalleries\PhotoContainer.xaml.cs">
+      <DependentUpon>PhotoContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomViews\PhotoGalleries\PreviewPhotoGallery.cs" />
+    <Compile Include="CustomViews\PhotoGalleries\ScrollingGridGallery.xaml.cs">
+      <DependentUpon>ScrollingGridGallery.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Data\AnimationsController.cs" />
     <Compile Include="Data\IHockeyAppService.cs" />
     <Compile Include="Data\ILocalize.cs" />
@@ -84,15 +91,21 @@
     <Compile Include="Pages\BasePage.xaml.cs">
       <DependentUpon>BasePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\GalleryPage.xaml.cs">
+      <DependentUpon>GalleryPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MasterDetailPP.xaml.cs">
       <DependentUpon>MasterDetailPP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PanGestureTest.xaml.cs">
+      <DependentUpon>PanGestureTest.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RandomAnimations.xaml.cs">
       <DependentUpon>RandomAnimations.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RedbitPage.cs" />
-    <Compile Include="Pages\ShowItemFromBelow.xaml.cs">
-      <DependentUpon>ShowItemFromBelow.xaml</DependentUpon>
+    <Compile Include="Pages\ShowItemFromOutside.xaml.cs">
+      <DependentUpon>ShowItemFromOutside.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\WebViewsPage.xaml.cs">
       <DependentUpon>WebViewsPage.xaml</DependentUpon>
@@ -211,13 +224,37 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ShowItemFromBelow.xaml">
+    <EmbeddedResource Include="Pages\ShowItemFromOutside.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\BasePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\PanGestureTest.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\GalleryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomViews\PhotoGalleries\PhotoContainer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomViews\PhotoGalleries\ScrollingGridGallery.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

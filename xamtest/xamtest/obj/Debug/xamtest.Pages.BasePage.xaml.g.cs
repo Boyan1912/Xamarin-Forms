@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace xamtest.Pages {
+namespace Xamarin.Forms {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
@@ -17,8 +17,12 @@ namespace xamtest.Pages {
     public partial class BasePage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.RelativeLayout PageWrapper;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(BasePage));
+            PageWrapper = this.FindByName<global::Xamarin.Forms.RelativeLayout>("PageWrapper");
         }
     }
 }

@@ -39,6 +39,7 @@ namespace xamtest.CustomViews
                 HorizontalOptions = LayoutOptions.Fill,
                 VerticalOptions = LayoutOptions.StartAndExpand,
                 Scale = 3,
+                Opacity = 0
             };
 
             Container = new StackLayout

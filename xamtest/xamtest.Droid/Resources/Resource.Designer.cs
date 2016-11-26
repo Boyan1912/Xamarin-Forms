@@ -2445,8 +2445,8 @@ namespace xamtest.Droid
 			// aapt resource value: 0x7f0200a6
 			public const int mr_ic_play_light = 2130837670;
 			
-			// aapt resource value: 0x7f0200ac
-			public const int notification_template_icon_bg = 2130837676;
+			// aapt resource value: 0x7f0200b7
+			public const int notification_template_icon_bg = 2130837687;
 			
 			// aapt resource value: 0x7f0200a7
 			public const int roundedbg = 2130837671;
@@ -2458,10 +2458,43 @@ namespace xamtest.Droid
 			public const int sexy = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int sexy_big = 2130837674;
+			public const int sexy0 = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int splash_screen = 2130837675;
+			public const int sexy1 = 2130837675;
+			
+			// aapt resource value: 0x7f0200ac
+			public const int sexy10 = 2130837676;
+			
+			// aapt resource value: 0x7f0200ad
+			public const int sexy2 = 2130837677;
+			
+			// aapt resource value: 0x7f0200ae
+			public const int sexy3 = 2130837678;
+			
+			// aapt resource value: 0x7f0200af
+			public const int sexy4 = 2130837679;
+			
+			// aapt resource value: 0x7f0200b0
+			public const int sexy5 = 2130837680;
+			
+			// aapt resource value: 0x7f0200b1
+			public const int sexy6 = 2130837681;
+			
+			// aapt resource value: 0x7f0200b2
+			public const int sexy7 = 2130837682;
+			
+			// aapt resource value: 0x7f0200b3
+			public const int sexy8 = 2130837683;
+			
+			// aapt resource value: 0x7f0200b4
+			public const int sexy9 = 2130837684;
+			
+			// aapt resource value: 0x7f0200b5
+			public const int sexy_big = 2130837685;
+			
+			// aapt resource value: 0x7f0200b6
+			public const int splash_screen = 2130837686;
 			
 			static Drawable()
 			{

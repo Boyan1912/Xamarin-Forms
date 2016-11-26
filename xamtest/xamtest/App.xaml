@@ -4,20 +4,29 @@
              x:Class="xamtest.App"
              xmlns:local="clr-namespace:xamtest.CustomViews;assembly=xamtest">
 
-    <Application.Resources>
-        <ResourceDictionary>
-            <!--StaticResources-->
-            <Color x:Key="PageBackgroundColor">White</Color>
-            <Color x:Key="HeadingTextColor">Black</Color>
-            <Color x:Key="NormalTextColor">Blue</Color>
-            <Style x:Key="LabelPageHeadingStyle" TargetType="Label">
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
-            </Style>
+  <Application.Resources>
+    <ResourceDictionary>
+      <!--StaticResources-->
+      <Color x:Key="PageBackgroundColor">White</Color>
+      <Color x:Key="HeadingTextColor">Black</Color>
+      <Color x:Key="NormalTextColor">Blue</Color>
+      <Style x:Key="LabelPageHeadingStyle" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
+      </Style>
 
-        
-        </ResourceDictionary>
-    </Application.Resources>
-    
+
+    <ControlTemplate x:Key="ContrTemplate">
+        <ContentView>
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Hello control template" TextColor="Maroon"/>
+              </StackLayout>
+                <ContentPresenter />
+        </ContentView>
+    </ControlTemplate>  
+  
+    </ResourceDictionary>
+  </Application.Resources>
+
 </Application>

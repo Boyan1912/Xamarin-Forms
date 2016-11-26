@@ -15,8 +15,7 @@ namespace xamtest.Data
     public class AnimationsController
     {
         private LoadingIndicator loadIndicator;
-
-
+        
         public AnimationsController()
         {
             loadIndicator = new LoadingIndicator();
@@ -45,8 +44,7 @@ namespace xamtest.Data
 
             await Task.WhenAll(
                 loadIndicator.FadeTo(1, 100, Easing.Linear).ContinueWith((t) => loadIndicator.Opacity = 1),
-                loadIndicator.Backdrop.FadeTo(0.7, 3000, Easing.Linear),
-                loadIndicator.ProgressBar.ProgressTo(1, 3000, Easing.Linear));
+                loadIndicator.Backdrop.FadeTo(0.7, 3000, Easing.Linear));
         }
 
         public async Task HideLoader(RelativeLayout layout)
@@ -175,6 +173,8 @@ namespace xamtest.Data
             await Task.WhenAll(
                 pop.FadeTo(1, 1500, Easing.CubicOut),
                 pop.LayoutTo(endPosition, 1500, Easing.CubicOut));
+
+            layout.SetBounds(pop);
 
             await pop.FadeTo(0, 1500, Easing.CubicIn);
             layout.Children.Remove(pop);

@@ -30,7 +30,8 @@ namespace xamtest
             {
                 Children =
                 {
-                    new ShowItemFromBelow(),
+                    new GalleryPage(),
+                    new ShowItemFromOutside(),
                     //new RandomAnimations(),
                     //new RedbitPage(),
                     //new WebViewsPage()

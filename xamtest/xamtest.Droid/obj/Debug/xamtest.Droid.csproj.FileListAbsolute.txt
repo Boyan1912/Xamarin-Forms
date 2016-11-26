@@ -181,5 +181,14 @@ D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\empty_star.png
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\values\strings.xml
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy.png
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy_big.jpg
-D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\xamtest.Droid.dll.mdb
-D:\workspace\xamtest\xamtest\xamtest.Droid\bin\Debug\xamtest.Droid.dll.mdb
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy9.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy0.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy1.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy10.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy2.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy3.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy4.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy5.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy6.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy7.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy8.jpg

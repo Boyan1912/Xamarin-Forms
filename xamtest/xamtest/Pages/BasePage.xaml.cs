@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace xamtest.Pages
+namespace Xamarin.Forms
 {
     public partial class BasePage : ContentPage
     {
@@ -16,6 +16,7 @@ namespace xamtest.Pages
             
         }
 
-        
+        public RelativeLayout PgWrapper { get { return PageWrapper; } set { PageWrapper = value; } }
+
     }
 }

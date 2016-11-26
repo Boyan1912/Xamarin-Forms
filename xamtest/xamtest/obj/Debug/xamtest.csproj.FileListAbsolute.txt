@@ -74,7 +74,9 @@ D:\workspace\xamtest\xamtest\xamtest\bin\Debug\Acr.UserDialogs.Interface.pdb
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.LoadingIndicator.xaml.g.cs
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.WebViewsPage.xaml.g.cs
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.MasterDetailPP.xaml.g.cs
-D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.ShowItemFromBelow.xaml.g.cs
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.BasePage.xaml.g.cs
-D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.dll.mdb
-D:\workspace\xamtest\xamtest\xamtest\bin\Debug\xamtest.dll.mdb
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.ShowItemFromOutside.xaml.g.cs
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.PanGestureTest.xaml.g.cs
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.PhotoGalleries.PhotoContainer.xaml.g.cs
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.PhotoGalleries.ScrollingGridGallery.xaml.g.cs
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.GalleryPage.xaml.g.cs

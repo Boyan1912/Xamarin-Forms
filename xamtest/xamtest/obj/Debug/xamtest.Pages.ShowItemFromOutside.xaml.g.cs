@@ -14,7 +14,7 @@ namespace xamtest.Pages {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class ShowItemFromBelow : global::xamtest.Pages.BasePage {
+    public partial class ShowItemFromOutside : global::Xamarin.Forms.BasePage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.RelativeLayout layout;
@@ -54,7 +54,7 @@ namespace xamtest.Pages {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(ShowItemFromBelow));
+            this.LoadFromXaml(typeof(ShowItemFromOutside));
             layout = this.FindByName<global::Xamarin.Forms.RelativeLayout>("layout");
             image = this.FindByName<global::Xamarin.Forms.Image>("image");
             ShowDownFromTop = this.FindByName<global::Xamarin.Forms.Button>("ShowDownFromTop");

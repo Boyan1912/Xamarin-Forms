@@ -10,9 +10,9 @@ using xamtest.Extensions;
 
 namespace xamtest.Pages
 {
-    public partial class ShowItemFromBelow : BasePage
+    public partial class ShowItemFromOutside : BasePage
     {
-        public ShowItemFromBelow()
+        public ShowItemFromOutside()
         {
             InitializeComponent();
 
@@ -25,6 +25,10 @@ namespace xamtest.Pages
             //ShowUpFromLeft.Clicked += async (s, e) => await App.AnimationsController.ShowPanel(layout, PanelLeft, Side.Left);
             PanelLeftContent.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(async () => await HidePanelLeft()) });
             var rightStack = new StackLayout { Children = { new Label { Text = "Right Panel", TextColor = Color.Purple, FontSize = 40 } }, VerticalOptions = LayoutOptions.CenterAndExpand, HorizontalOptions = LayoutOptions.CenterAndExpand, BackgroundColor = Color.FromRgba(0, 0, 0, 0.5) };
+            rightStack.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(async () => {
+                await rightStack.FadeTo(0, 300, Easing.SinIn);
+                layout.Children.Remove(rightStack);
+            }) });
             ShowUpFromRight.Clicked += async (s, e) => await App.AnimationsController.ShowPanel(layout, rightStack, Side.Right);
 
 
@@ -41,6 +45,8 @@ namespace xamtest.Pages
 
         private async Task ShowPanelFromBelow()
         {
+            //await App.AnimationsController.ShowLoader(RelLayout);
+
             PanelDownShowing = !PanelDownShowing;
 
             if (PanelDownShowing)
