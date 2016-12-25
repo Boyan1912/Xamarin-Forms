@@ -80,3 +80,5 @@ D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.PanGestureTest.xaml
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.PhotoGalleries.PhotoContainer.xaml.g.cs
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.PhotoGalleries.ScrollingGridGallery.xaml.g.cs
 D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.Pages.GalleryPage.xaml.g.cs
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.CustomViews.AlertPanel.xaml.g.cs
+D:\workspace\xamtest\xamtest\xamtest\obj\Debug\xamtest.AbsoluteLayoutPages.AbsoluteLayoutTestPage.xaml.g.cs

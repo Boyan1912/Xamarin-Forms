@@ -35,12 +35,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AbsoluteLayoutPages\AbsoluteLayoutTestPage.xaml.cs">
+      <DependentUpon>AbsoluteLayoutTestPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Behaviors\TranslateTextBehavior.cs" />
     <Compile Include="CustomControls\TranslatableLabel.cs" />
+    <Compile Include="CustomViews\AlertPanel.xaml.cs">
+      <DependentUpon>AlertPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomViews\AnimatedButton.cs" />
+    <Compile Include="CustomViews\DisposableContent.cs" />
     <Compile Include="CustomViews\Feedback.xaml.cs">
       <DependentUpon>Feedback.xaml</DependentUpon>
     </Compile>
@@ -58,9 +65,11 @@
       <DependentUpon>ScrollingGridGallery.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\AnimationsController.cs" />
+    <Compile Include="Data\ErrorsReporter.cs" />
     <Compile Include="Data\IHockeyAppService.cs" />
     <Compile Include="Data\ILocalize.cs" />
     <Compile Include="Data\LanguageController.cs" />
+    <Compile Include="Data\Notifier.cs" />
     <Compile Include="Data\PlatformCulture.cs" />
     <Compile Include="Data\TranslateByKeyExtension.cs" />
     <Compile Include="Data\TranslateExtension.cs" />
@@ -163,7 +172,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExtendedPages\" />
     <Folder Include="Infrastructure\" />
   </ItemGroup>
   <ItemGroup>
@@ -255,6 +263,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CustomViews\PhotoGalleries\ScrollingGridGallery.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomViews\AlertPanel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbsoluteLayoutPages\AbsoluteLayoutTestPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

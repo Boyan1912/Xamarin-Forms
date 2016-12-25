@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamtest.AbsoluteLayoutPages.AbsoluteLayoutTestPage">
+
+    <ContentPage.Content>
+
+        <AbsoluteLayout x:Name="Wrapper">
+            <Image Source="sexy11.png" x:Name="Img"
+                AbsoluteLayout.LayoutBounds=".1,.07,.2,.2" AbsoluteLayout.LayoutFlags="All" />
+            <Label Text="I'm bottom center on every device."
+                AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All"
+                LineBreakMode="WordWrap"  />
+            <Button x:Name="TestButton" Text="Tap to test custom alert service"
+                AbsoluteLayout.LayoutBounds=".5,.25,.5,.14" AbsoluteLayout.LayoutFlags="All"/>
+            <Button x:Name="TestLoadingIndicator" Text="Tap to test activity indicator"
+                AbsoluteLayout.LayoutBounds=".5,.4,.5,.14" AbsoluteLayout.LayoutFlags="All"/>
+            <Button x:Name="TestRotation" Text="Tap to test rotating image"
+                AbsoluteLayout.LayoutBounds=".5,.55,.5,.14" AbsoluteLayout.LayoutFlags="All"/>
+            <Button x:Name="TestAlertScaling" Text="Tap to test scaling custom alert service"
+                AbsoluteLayout.LayoutBounds=".5,.7,.5,.14" AbsoluteLayout.LayoutFlags="All"/>
+            <BoxView Color="Olive"  AbsoluteLayout.LayoutBounds="1,.5, 25, 100"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <BoxView Color="Red" AbsoluteLayout.LayoutBounds="0,.5,25,100"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <BoxView Color="Blue" AbsoluteLayout.LayoutBounds=".5,0,100,25"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+    
+    
+</ContentPage>

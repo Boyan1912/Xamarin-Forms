@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace xamtest.CustomViews.PhotoGalleries
 {
-    public partial class PhotoContainer : ContentView
+    public partial class PhotoContainer : DisposableContentView
     {
         private bool isSelected;
 
@@ -23,6 +23,9 @@ namespace xamtest.CustomViews.PhotoGalleries
                     BackgroundColor = Color.Maroon;
                 else
                     BackgroundColor = Color.White;
-            } }
+            }
+        }
+
+
     }
 }

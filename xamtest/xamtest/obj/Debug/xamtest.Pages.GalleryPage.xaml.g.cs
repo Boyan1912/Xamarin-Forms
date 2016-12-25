@@ -23,10 +23,18 @@ namespace xamtest.Pages {
         private global::xamtest.CustomViews.PhotoGalleries.ScrollingGridGallery Gallery;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button TestErrorReporterBtn;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button TestAnotherErrorReporterBtn;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(GalleryPage));
             Wrapper = this.FindByName<global::Xamarin.Forms.RelativeLayout>("Wrapper");
             Gallery = this.FindByName<global::xamtest.CustomViews.PhotoGalleries.ScrollingGridGallery>("Gallery");
+            TestErrorReporterBtn = this.FindByName<global::Xamarin.Forms.Button>("TestErrorReporterBtn");
+            TestAnotherErrorReporterBtn = this.FindByName<global::Xamarin.Forms.Button>("TestAnotherErrorReporterBtn");
         }
     }
 }

@@ -35,6 +35,9 @@ namespace xamtest.Pages {
         private global::Xamarin.Forms.Button ShowUpFromRight;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button TestCustomDisplayAlert;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.ScrollView PanelUp;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -61,6 +64,7 @@ namespace xamtest.Pages {
             ShowUpFromBottom = this.FindByName<global::Xamarin.Forms.Button>("ShowUpFromBottom");
             ShowUpFromLeft = this.FindByName<global::Xamarin.Forms.Button>("ShowUpFromLeft");
             ShowUpFromRight = this.FindByName<global::Xamarin.Forms.Button>("ShowUpFromRight");
+            TestCustomDisplayAlert = this.FindByName<global::Xamarin.Forms.Button>("TestCustomDisplayAlert");
             PanelUp = this.FindByName<global::Xamarin.Forms.ScrollView>("PanelUp");
             PanelUpStack = this.FindByName<global::Xamarin.Forms.StackLayout>("PanelUpStack");
             PanelDown = this.FindByName<global::Xamarin.Forms.ScrollView>("PanelDown");

@@ -11,7 +11,7 @@ namespace xamtest.CustomViews.PhotoGalleries
     public partial class ScrollingGridGallery : ContentView
     {
         private int currentColumn;
-        private const int columnsPerPage = 4;
+        private const int columnsPerPage = 5;
         private const int rows = 2;
         
         private Grid grid;
@@ -35,8 +35,7 @@ namespace xamtest.CustomViews.PhotoGalleries
                 AddContent();
             }
         }
-
-        // always run synchronously! 
+ 
         private void AddContent()
         {
             if (currentColumn == 0)

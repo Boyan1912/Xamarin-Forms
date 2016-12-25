@@ -10,6 +10,18 @@
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Y, Factor=1}"
                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.8}"/>
+
+            <Button x:Name="TestErrorReporterBtn" Text="Test error message" 
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=X, Factor=1.3}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height, Factor=0.8}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.4}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.15}"/>
+            <Button x:Name="TestAnotherErrorReporterBtn" Text="Test another error" 
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=0.5}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height, Factor=0.8}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.4}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.15}"/>
+            
         </RelativeLayout>
     </BasePage.Content>
 </BasePage>

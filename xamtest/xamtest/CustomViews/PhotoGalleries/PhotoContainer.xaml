@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<DisposableContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  x:Class="xamtest.CustomViews.PhotoGalleries.PhotoContainer">
-  <ContentView.Content>
-        <RelativeLayout>
-            <StackLayout Padding="10"
-                            RelativeLayout.XConstraint =
-      "{ConstraintExpression Type=RelativeToParent,
-                             Property=X,
-                             Factor=1}"
-    RelativeLayout.YConstraint =
-      "{ConstraintExpression Type=RelativeToParent,
-                             Property=Y,
-                             Factor=1}">
-                >
-                <Image Aspect="AspectFit" x:Name="Img"/>
-            </StackLayout>
-        </RelativeLayout>
-  </ContentView.Content>
-</ContentView>
+    <DisposableContentView.Content>
+        <StackLayout x:Name="Wrapper" Padding="5">
+            <DisposableImage x:Name="Img1"/>
+            <DisposableImage x:Name="Img2"/>
+            <DisposableImage x:Name="Img3"/>
+        </StackLayout>
+  </DisposableContentView.Content>
+</DisposableContentView>

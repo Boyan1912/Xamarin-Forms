@@ -192,3 +192,4 @@ D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy5.jpg
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy6.jpg
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy7.jpg
 D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy8.jpg
+D:\workspace\xamtest\xamtest\xamtest.Droid\obj\Debug\res\drawable\sexy11.png

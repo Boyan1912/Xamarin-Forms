@@ -10,7 +10,9 @@
       <Color x:Key="PageBackgroundColor">White</Color>
       <Color x:Key="HeadingTextColor">Black</Color>
       <Color x:Key="NormalTextColor">Blue</Color>
-      <Style x:Key="LabelPageHeadingStyle" TargetType="Label">
+            <Color x:Key="MyBlue">#338FFF</Color>
+      
+     <Style x:Key="LabelPageHeadingStyle" TargetType="Label">
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />

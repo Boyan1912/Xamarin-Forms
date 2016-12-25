@@ -11,6 +11,7 @@ using xamtest.Data;
 using xamtest.Localization;
 using System.Reflection;
 using System.Globalization;
+using xamtest.AbsoluteLayoutPages;
 
 namespace xamtest
 {
@@ -30,13 +31,14 @@ namespace xamtest
             {
                 Children =
                 {
-                    new GalleryPage(),
-                    new ShowItemFromOutside(),
+                    new AbsoluteLayoutTestPage(),
+                    //new GalleryPage(),
+                    //new ShowItemFromOutside(),
                     //new RandomAnimations(),
                     //new RedbitPage(),
                     //new WebViewsPage()
                     //new AnimSettings(),
-                    //new FormattedTextsTestPage()
+                    
                 }
             });
 

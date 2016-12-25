@@ -14,15 +14,27 @@ namespace xamtest.CustomViews.PhotoGalleries {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class PhotoContainer : global::Xamarin.Forms.ContentView {
+    public partial class PhotoContainer : global::Xamarin.Forms.DisposableContentView {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Image Img;
+        private global::Xamarin.Forms.StackLayout Wrapper;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.DisposableImage Img1;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.DisposableImage Img2;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.DisposableImage Img3;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(PhotoContainer));
-            Img = this.FindByName<global::Xamarin.Forms.Image>("Img");
+            Wrapper = this.FindByName<global::Xamarin.Forms.StackLayout>("Wrapper");
+            Img1 = this.FindByName<global::Xamarin.Forms.DisposableImage>("Img1");
+            Img2 = this.FindByName<global::Xamarin.Forms.DisposableImage>("Img2");
+            Img3 = this.FindByName<global::Xamarin.Forms.DisposableImage>("Img3");
         }
     }
 }

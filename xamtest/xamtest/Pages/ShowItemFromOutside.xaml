@@ -27,8 +27,12 @@
                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.05}"
                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.9}"
                     />
-
-            <!--Panel Up-->
+        <Button x:Name="TestCustomDisplayAlert" Text="Test custom display alert" BackgroundColor="Navy" 
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=0.2}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height, Factor=0.7}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.6}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.15}"/>
+        <!--Panel Up-->
             <ScrollView x:Name="PanelUp" 
                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Constant=0}"
                      RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=-1.1}"

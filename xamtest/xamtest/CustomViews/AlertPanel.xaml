@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="xamtest.CustomViews.AlertPanel">
+    <ContentView.Content>
+        <AbsoluteLayout >
+            <StackLayout BackgroundColor="Black" Opacity=".4" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+            <Frame x:Name="Panel" BackgroundColor="{StaticResource MyBlue}" AbsoluteLayout.LayoutBounds=".5,.5,.7,.3" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout Padding="0">
+                    <Label x:Name="TitleTxt" FontAttributes="Bold" FontSize="22" TextColor="Maroon"/>
+                    <Label x:Name="MessageTxt" FontSize="18" TextColor="White"/>
+                    <StackLayout HorizontalOptions="End" VerticalOptions="End" Orientation="Horizontal" Padding="0" Spacing="15">
+                        <Label x:Name="AgreeTxt" FontSize="18" HorizontalOptions="Start" VerticalOptions="End" TextColor="Lime"/>
+                        <Label x:Name="DisagreeTxt" FontSize="18" HorizontalOptions="End" VerticalOptions="End" TextColor="Pink"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

@@ -37,6 +37,22 @@ namespace xamtest.Pages
             PanelLeft.BackgroundColor = Color.FromRgba(0, 0, 0, 0.3);
             
             Content.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(async () => await PopUpFromTop("Pop...!")) });
+
+            TestCustomDisplayAlert.Clicked += TestCustomDisplayAlert_Clicked;
+        }
+
+
+        private async void TestCustomDisplayAlert_Clicked(object sender, EventArgs e)
+        {
+            bool agree = await Notifier.Alert(layout, "Test", "Do you want to get success?", "yes", "no");
+            if (agree)
+            {
+                await App.AnimationsController.PopUpFromTop("Success!", layout);
+            }
+            else
+            {
+                await App.AnimationsController.PopUpFromTop("Failure!", layout);
+            }
         }
 
         public bool PanelDownShowing { get; set; }
